@@ -1,0 +1,14 @@
+form {
+    background: var(--accent-bg);
+    border: 2px solid var(--border);
+    border-radius: 5px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+input {
+    width: 100%;
+}
+
+form ul#formats {
+    list-style-type: none;
+}

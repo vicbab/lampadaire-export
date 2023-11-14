@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+       xml:lang="fr">
+
+<head>
+  <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+  <link rel="schema.MARCREL" href="http://www.loc.gov/loc.terms/relators/"/>
+  <link rel="DCTERMS.subject" href="http://rameau.bnf.fr"/>
+  <link rel="schema.prism" href="http://prismstandard.org/namespaces/basic/2.0/"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="pandoc-template_Html5" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+<!-- for preview only, meta to be removed when published -->
+     <meta name="robots" content="noindex, nofollow"/>
+
+<!--Metadonnees Dublin Core -->
+
+  <meta name="DC.type" content="Text" />
+  <meta name="DC.format" content="text/html" />
+  <meta name="DC.type" content="journalArticle" />
+  <meta name="DC.type" class="typeArticle" content="Essai" />
+  <meta name="DC.title" content="Stylo" />
+  <meta name="DC.title.Main" content="Stylo" />
+   <meta name="DC.title.Subtitle" content="Un article type" />
+        <meta name="DC.language" content="fr" />
+  <meta name="DC.date" class="completeDate" content="2018-05-29" />
+  <meta name="DC.date" class="year" content="2018" />
+   
+
+<!--Utilisation de MARCREL pour specifier le role du "contributeur" en Dublin core
+    drt = director -->
+
+<!--Auteur de l'article -->
+  <meta name="author" content="Marcello Vitali-Rosati" />
+  <meta name="DC.creator" content="Marcello Vitali-Rosati" />
+  <meta name="author" content="Nicolas Sauret" />
+  <meta name="DC.creator" content="Nicolas Sauret" />
+
+<!--Resumes -->
+  <meta name="description" xml:lang="fr" lang="fr" content="C’est
+article est un exemple d’article type édité sur Stylo. Stylo est un
+éditeur d’article scientifique dédié aux sciences humaines. Vous pouvez
+éditer cet article pour vous entraîner. Une documentation plus complète
+est accessible en cliquant sur le lien documentation." />
+  <meta name="DC.description" xml:lang="fr" lang="fr" content="C’est
+article est un exemple d’article type édité sur Stylo. Stylo est un
+éditeur d’article scientifique dédié aux sciences humaines. Vous pouvez
+éditer cet article pour vous entraîner. Une documentation plus complète
+est accessible en cliquant sur le lien documentation." />
+
+<!--Mots cles auteurs -->
+  <meta name="keywords" xml:lang="fr" lang="fr" content="édition,
+bac-à-sable" />
+  <meta name="keywords" xml:lang="en" lang="en" content="publishing,
+sandbox" />
+
+  <meta name="DC.subject" xml:lang="fr" lang="fr" content="Édition" />
+
+<!--  traducteur avec specification MARCREL -->
+
+
+  <!--  transcripteur avec specification MARCREL -->
+
+<!--  redacteur avec specification MARCREL -->
+
+
+<!-- schema citation : Indexation pour Google Scholar  -->
+  <meta name="citation_authors" content="Marcello Vitali-Rosati" />
+  <meta name="citation_authors" content="Nicolas Sauret" />
+  <meta name="citation_title" content="Stylo" />
+  <meta name="citation_subtitle" content="Un article type" />
+  <meta name="citation_publication_date" content="2018/05/29" />
+  <meta name="citation_online_date" content="2018/05/29" />
+  <meta name="citation_language" content="fr" />
+
+  <meta name="citation_abstract" xml:lang="fr" lang="fr" content="C’est
+article est un exemple d’article type édité sur Stylo. Stylo est un
+éditeur d’article scientifique dédié aux sciences humaines. Vous pouvez
+éditer cet article pour vous entraîner. Une documentation plus complète
+est accessible en cliquant sur le lien documentation." />
+
+
+  <meta name="citation_keywords" xml:lang="fr" lang="fr" content="édition,
+bac-à-sable" />
+  <meta name="citation_keywords" xml:lang="en" lang="en" content="publishing,
+sandbox" />
+
+
+<!--PRISM schema - Publishing Requirements for Industry Standard Metadata
+Schema specialise pour les revues et journaux-->
+  <meta name="prism.publicationDate" content="2018/05/29"/>
+  <meta name="prism.genre" content="Essai"/>
+  <meta name="prism.teaser" xml:lang="fr" lang="fr" content="C’est
+article est un exemple d’article type édité sur Stylo. Stylo est un
+éditeur d’article scientifique dédié aux sciences humaines. Vous pouvez
+éditer cet article pour vous entraîner. Une documentation plus complète
+est accessible en cliquant sur le lien documentation." />
+
+
+<!--RDFa pour ajout des metadonnees DC-->
+  <meta property="dc:format" content="text/html" />
+  <meta property="dc:title" content="Stylo" />
+  <meta property="dc:title.Main" content="Stylo" />
+  <meta property="dc:title.Subtitle" content="Un article type" />
+  <meta property="dc:language" content="fr" />
+  <meta property="dc:type" content="journalArticle" />
+  <meta property="dcterm:created" content="2018/05/29" />
+
+  <meta property="dc:creator" content="Marcello Vitali-Rosati" />
+  <meta property="dc:creator" content="Nicolas Sauret" />
+
+
+
+  <meta property="dcterms:abstract" xml:lang="fr" lang="fr" content="C’est
+article est un exemple d’article type édité sur Stylo. Stylo est un
+éditeur d’article scientifique dédié aux sciences humaines. Vous pouvez
+éditer cet article pour vous entraîner. Une documentation plus complète
+est accessible en cliquant sur le lien documentation." />
+
+  <meta property="dc:subject" xml:lang="fr" lang="fr" content="Édition" />
+  <link rel="dc:subject" href="http://catalogue.bnf.fr/ark:/12148/cb13318593f"/>
+
+
+
+<!--Fin des metadonnees dans le Head-->
+
+<!--Balise Title pour affichage titre dans le navigateur-->
+<!-- <title>Stylo</title>-->
+
+  <title>Stylo : Un article type</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+
+
+<body>
+
+
+<!--indexations FOAF-->
+<header>
+<div class="indexations-foaf" style="display:none">
+<!--indexation FOAF pour auteur de l'article-->
+  <div property="http://purl.org/dc/terms/creator">
+    <div vocab="http://xmlns.com/foaf/0.1/" typeof="Person" class="foaf-author">
+       <span property="familyName">Vitali-Rosati</span>
+       <span property="firstName">Marcello</span>
+       <span property="openid">0000-0001-6424-3229</span>
+    </div>
+  </div>
+  <div property="http://purl.org/dc/terms/creator">
+    <div vocab="http://xmlns.com/foaf/0.1/" typeof="Person" class="foaf-author">
+       <span property="familyName">Sauret</span>
+       <span property="firstName">Nicolas</span>
+       <span property="openid">0000-0001-7516-3427</span>
+    </div>
+  </div>
+
+<!--indexation FOAF pour redacteur du dossier-->
+
+<!--indexation FOAF pour directeur de la revue-->
+
+<!--indexation FOAF pour traducteur de l'article -->
+
+<!--indexation FOAF pour transcripteur des propos (entretiens, débats) -->
+</div> <!-- End indexation FOAF -->
+
+
+<!--Integration schema "ScholarlyArticle"-->
+<div vocab="http://schema.org/" typeof="ScholarlyArticle" resource="#article" id="schema-scholarly-article">
+
+<!--Indexation titre/soustitre de l'article-->
+  <span property="name">Stylo</span><br />
+  <span property="name">Un article type</span><br />
+
+<!--Indexation auteur de l'article-->
+  <span property="author">Marcello Vitali-Rosati</span><br />
+  <span property="author">Nicolas Sauret</span><br />
+
+<!--Indexation editeur-->
+
+<!--Indexation revue-->
+
+<!-- Indexation resumes -->
+  <div class="description">
+    <div property="description" class="resume" lang="fr">C’est article
+est un exemple d’article type édité sur <em>Stylo</em>. <em>Stylo</em>
+est un éditeur d’article scientifique dédié aux sciences humaines. Vous
+pouvez éditer cet article pour vous entraîner. Une documentation plus
+complète est accessible en cliquant sur le lien documentation.</div>
+  </div>
+
+<!--Indexation traduction-->
+
+<!-- Indexation mots cles controles -->
+  <div class="keywords" vocab="http://purl.org/dc/terms/">
+    <div class="Édition" lang="fr">
+      <span property="subject" class="label">Édition</span>
+      <span property="subject" class="uriRameau" style="display:none">http://catalogue.bnf.fr/ark:/12148/cb13318593f</span>
+      <span property="subject" class="idRameau" style="display:none">FRBNF13318593</span>
+    </div>
+  </div>
+
+</div> <!-- end Integration schema "ScholarlyArticle"-->
+
+<!--Indexation mots cles auteurs-->
+<div class="authorKeywords_fr" vocab="http://purl.org/dc/terms/" lang="fr">
+  <span property="subject">édition, bac-à-sable</span>
+</div>
+<div class="authorKeywords_en" vocab="http://purl.org/dc/terms/" lang="en">
+  <span property="subject">publishing, sandbox</span>
+</div>
+
+</header>
+<hr id="startArticle">
+<!--Corps de l'article-->
+<article>
+  <section id="introduction" class="level2">
+  <h2>Introduction</h2>
+  <p>Stylo est un éditeur de texte scientifique. Pour faire vos premiers
+  pas sur Stylo, commencez par éditer cet article.</p>
+  <p>Stylo utilise le format <em>markdown</em> pour baliser et styler le
+  texte. Cet article présente la syntaxe de base du markdown, et une
+  documentation plus complète <a
+  href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">est
+  accessible ici</a>.</p>
+  <p>Vous pouvez visualiser l’article à tout moment en cliquant sur le
+  bouton <strong>Preview</strong> dans le menu de gauche.</p>
+  </section>
+  <section id="les-titres" class="level2">
+  <h2>Les titres</h2>
+  <p>Les titres de niveaux 2 doivent être balisés avec 2 <code>#</code>
+  (<code>##</code>) et non un seul, car le titre de niveau 1 correspond
+  au titre de l’article, déclaré dans les métadonnées.</p>
+  <section id="titres-de-niveau-3" class="level3">
+  <h3>Titres de niveau 3</h3>
+  <p>Les titres de niveaux 3 doivent être balisés avec 3 <code>#</code>
+  et ainsi de suite.</p>
+  <p>Un saut de ligne correspond au début d’un nouveau paragraphe.</p>
+  </section>
+  </section>
+  <section id="syntaxe-minimale" class="level2">
+  <h2>Syntaxe minimale</h2>
+  <section id="gras-et-italique" class="level3">
+  <h3>Gras et italique</h3>
+  <p>Voici du texte en <em>italique</em>. Voici du texte en
+  <strong>gras</strong>.</p>
+  </section>
+  <section id="commentaire" class="level3">
+  <h3>Commentaire</h3>
+  <p>La ligne ci-dessous n’apparaitra pas dans le document final.</p>
+  <!-- Cette ligne sera traitée comme un commentaire, elle n'apparaitra pas dans le document final -->
+  </section>
+  <section id="images" class="level3">
+  <h3>Images</h3>
+  <p>On peut insérer des images:</p>
+  <figure>
+  <img
+  src="https://avatars2.githubusercontent.com/u/16691667?s=200&amp;v=4"
+  alt="Titre de mon image" />
+  <figcaption aria-hidden="true">Titre de mon image</figcaption>
+  </figure>
+  <p>Notez que le «Titre de mon image» sera pris en compte comme légende
+  de l’image dans l’article.</p>
+  </section>
+  <section id="listes" class="level3">
+  <h3>Listes</h3>
+  <p>Les listes non numérotées:</p>
+  <ul>
+  <li>item</li>
+  <li>item</li>
+  <li>item</li>
+  </ul>
+  <p>Les listes numérotées:</p>
+  <ol type="1">
+  <li>item</li>
+  <li>item</li>
+  <li>item</li>
+  </ol>
+  <p>L’ordre des chiffres n’est pas important:</p>
+  <ol type="1">
+  <li>item</li>
+  <li>item</li>
+  <li>item</li>
+  <li>item</li>
+  </ol>
+  <p>Cette liste sera automatiquement ordonnée de 1 à 4.</p>
+  </section>
+  </section>
+  <section id="appareil-critique" class="level2">
+  <h2>Appareil critique</h2>
+  <section id="notes-de-bas-de-page" class="level3">
+  <h3>Notes de bas de page</h3>
+  <p>Un appel de note de bas de page se fait ainsi<a href="#fn1"
+  class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.
+  Par ailleurs, la note peut être déclarée n’importe où dans le
+  document<a href="#fn2" class="footnote-ref" id="fnref2"
+  role="doc-noteref"><sup>2</sup></a>, en fin de document ou juste en
+  dessous par exemple<a href="#fn3" class="footnote-ref" id="fnref3"
+  role="doc-noteref"><sup>3</sup></a>.</p>
+  <p>Le label de la note peut être ce que vous voulez : il peut être
+  indifféremment un chiffre ou une suite de caractères<a href="#fn4"
+  class="footnote-ref" id="fnref4"
+  role="doc-noteref"><sup>4</sup></a>.</p>
+  <p>Une note de bas de page peut aussi être écrite dans le corps du
+  texte, en sortant l’accent circonflexe des crochets<a href="#fn5"
+  class="footnote-ref" id="fnref5"
+  role="doc-noteref"><sup>5</sup></a>.</p>
+  </section>
+  <section id="les-références" class="level3">
+  <h3>Les références</h3>
+  <p>Un article scientifique utilise des références. Vous pouvez soit
+  importer un fichier <a
+  href="http://www.bib.umontreal.ca/lgb/BibTeX/default.htm">bibtex</a>
+  généré par votre logiciel de gestion bibliographique (conseillé), ou
+  bien créer manuellement les références au format bibtex.</p>
+  <p>Les références sont ensuite insérées dans le texte grâce à leur
+  <em>clé bibtex</em>. Pour récupérer la clé bibtex d’une référence, il
+  suffit de cliquer sur la référence souhaitée dans la liste des
+  référence ci-contre. La clé est alors ajouté à votre presse-papier, il
+  suffit ensuite de la coller dans le texte <span class="citation"
+  data-cites="goody_raison_1979">(<a href="#ref-goody_raison_1979"
+  role="doc-biblioref">Goody 1979</a>)</span>.</p>
+  <p>Pour résumer :</p>
+  <ol type="1">
+  <li>clic sur la référence: copier la clé</li>
+  <li>coller ou CTRL+V : colle la clé dans le texte où est positionné le
+  curseur <span class="citation" data-cites="goody_raison_1979">(<a
+  href="#ref-goody_raison_1979" role="doc-biblioref">Goody
+  1979</a>)</span>.</li>
+  </ol>
+  <p>Il est également possible d’ajouter une référence ainsi : « Comme
+  le dit <span class="citation" data-cites="goody_raison_1979">Goody (<a
+  href="#ref-goody_raison_1979" role="doc-biblioref">1979</a>)</span>,
+  le geste … »</p>
+  <p>La clé peut aussi être accompagnée de précision comme ici <span
+  class="citation" data-cites="goody_raison_1979">(<a
+  href="#ref-goody_raison_1979" role="doc-biblioref">Goody 1979,
+  pp.115</a>)</span>.</p>
+  <p>Les références citées se retrouveront ensuite à la fin du texte
+  dans la section <code>## Bibliographie</code></p>
+  </section>
+  <section id="les-citations" class="level3">
+  <h3>Les citations</h3>
+  <p>Une citation dans le corps du texte est indiquée par guillemets «
+  Stat rosa pristina nomine, nomina nuda tenemus ». Une citation plus
+  longue peut être indiquée ainsi :</p>
+  <blockquote>
+  <p>Stat rosa pristina nomine, nomina nuda tenemus.</p>
+  <p>la citation se poursuit avec un second paragraphe.</p>
+  </blockquote>
+  </section>
+  </section>
+  <section id="versions-et-export" class="level2">
+  <h2>Versions et export</h2>
+  <section id="métadonnées" class="level3">
+  <h3>Métadonnées</h3>
+  <p>Les métadonnées de l’article s’éditent dans le menu en haut à
+  droite. Vous pouvez y indiquer le titre, sous-titre, le nom de
+  l’auteur et son identifiant de l’Orcid<a href="#fn6"
+  class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>,
+  le résumé et les mot-clés de l’article. Pour les éditeurs de revue,
+  une série plus complète de métadonnées est également disponible.</p>
+  </section>
+  <section id="preview-et-annotation" class="level3">
+  <h3>Preview et annotation</h3>
+  <p>Chaque version de votre texte peut être prévisualisée et annotée
+  avec l’outil d’annotation Hypothes.is. Pour accéder à la preview,
+  cliquez sur le bouton <strong>Preview</strong>. Pour accéder à la
+  version html annotable, cliquez sur le bouton
+  <strong>Anotate</strong>. Vous pouvez alors partager ces urls de
+  preview et d’annotation. Chaque url est relative à la version du
+  document.</p>
+  </section>
+  <section id="export" class="level3">
+  <h3>Export</h3>
+  <p>Plusieurs types d’exports sont disponibles :</p>
+  <ul>
+  <li>XML Erudit : exporte un fichier xml compatible avec le schéma
+  Erudit</li>
+  <li>Zip : comprend les trois sources de l’article : yaml
+  (métadonnées), bibtex (bibliographie), md (corps de texte)</li>
+  <li>…</li>
+  </ul>
+  </section>
+  </section>
+  <section id="annotations-sémantiques" class="level2">
+  <h2>Annotations sémantiques</h2>
+  <p>Il est possible de structurer sémantiquement votre texte avec des
+  simples balises.</p>
+  <p>Il y a deux types d’annotation sémantiques:</p>
+  <ol type="1">
+  <li>Des annotations qui concernent un ou plusieurs mots dans le même
+  paragraphe</li>
+  <li>Des annotations qui concernent plusieurs paragraphes</li>
+  </ol>
+  <section id="annotation-dans-un-paragraphe" class="level3">
+  <h3>Annotation dans un paragraphe</h3>
+  <p>La syntaxe:</p>
+  <p><span class="these">Voici la thèse de l’article</span></p>
+  <p>Produira en HTML:</p>
+  <p><span class="these">Voici la thèse de l’article</span></p>
+  <p>Dans la preview vous pouvez visualiser les classes:</p>
+  <ul>
+  <li>these</li>
+  <li>definition</li>
+  <li>exemple</li>
+  <li>concept</li>
+  <li>epigraphe</li>
+  <li>dedicace</li>
+  <li>note</li>
+  </ul>
+  </section>
+  <section id="annotation-de-plusieurs-paragraphes" class="level3">
+  <h3>Annotation de plusieurs paragraphes</h3>
+  <p>La syntaxe:</p>
+  <div class="maclasse">
+  <p>Ici un paragraphe.</p>
+  <p>Ici un autre paragraphe.</p>
+  </div>
+  <p>Produira en HTML:</p>
+  <div class="sourceCode" id="cb1"><pre
+  class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;maclasse&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;p&gt;</span>Ici un paragraphe.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;p&gt;</span>Ici un autre paragraphe.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code></pre></div>
+  <p>Pour plus d’informations, consultez la documentation.</p>
+  </section>
+  </section>
+  <section id="bibliographie" class="level2">
+  <h2>Bibliographie</h2>
+  <!-- La bibliographie apparaîtra automatiquement en fin d'article, à cet endroit -->
+  <div id="refs" class="references csl-bib-body hanging-indent"
+  role="doc-bibliography">
+  <div id="ref-goody_raison_1979" class="csl-entry"
+  role="doc-biblioentry">
+  Goody, Jack. 1979. <em>La <span>Raison</span> graphique.
+  <span>La</span> domestication de la pensée sauvage.</em> Le sens
+  commun. Les Editions de Minuit.
+  </div>
+  </div>
+  </section>
+  <section class="footnotes footnotes-end-of-document"
+  role="doc-endnotes">
+  <hr />
+  <ol>
+  <li id="fn1" role="doc-endnote"><p>La note se trouve ensuite à la fin
+  du texte.<a href="#fnref1" class="footnote-back"
+  role="doc-backlink">↩︎</a></p></li>
+  <li id="fn2" role="doc-endnote"><p>Voici une note déclarée en fin de
+  document<a href="#fnref2" class="footnote-back"
+  role="doc-backlink">↩︎</a></p></li>
+  <li id="fn3" role="doc-endnote"><p>Une note déclarée “n’importe où”,
+  ici, juste en dessous du paragraphe correspondant.<a href="#fnref3"
+  class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+  <li id="fn4" role="doc-endnote"><p>Voici une note avec un label
+  textuel.<a href="#fnref4" class="footnote-back"
+  role="doc-backlink">↩︎</a></p></li>
+  <li id="fn5" role="doc-endnote"><p>Ceci est une note de bas de page
+  inline. Elle peut être aussi longue que vous voulez, elle sera
+  transformée comme les autres en note de bas de page<a href="#fnref5"
+  class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+  <li id="fn6" role="doc-endnote"><p>L’identifiant Orcid permettra de
+  récupérer automatiquement l’affiliation et la biographie de
+  l’auteur.<a href="#fnref6" class="footnote-back"
+  role="doc-backlink">↩︎</a></p></li>
+  </ol>
+  </section>
+  </article>
+</body>
+</html>

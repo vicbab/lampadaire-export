@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <form
+        method="POST"
+        action="{{ url_for('views.index') }}"
+        {% if form.errors %}class="errors"{% endif %}
+    >
+        {{ form.csrf_token }}
+        {{ form.edition.label }} :<br />
+        {{ form.edition }}
+        <input type="submit" value="Poursuivre">
+    </form>
+{% endblock main %}

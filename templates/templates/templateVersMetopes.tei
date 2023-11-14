@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"$if(lang)$ xml:lang="$lang$"$endif$>
+<teiHeader>
+  <fileDesc>
+    <titleStmt>
+      <title>$title$</title>
+$for(author)$
+      <author>$author$</author>
+$endfor$
+    </titleStmt>
+    <publicationStmt>
+$if(publicationStmt)$
+      <p>$if(publicationStmt)$$publicationStmt$$endif$</p>
+$endif$
+$if(license)$
+      <availability><licence>$license$</licence></availability>
+$endif$
+$if(publisher)$
+      <publisher>$publisher$</publisher>
+$endif$
+$if(pubPlace)$
+      <pubPlace>$pubPlace$</pubPlace>
+$endif$
+$if(address)$
+      <address>$address$</address>
+$endif$
+$if(date)$
+      <date>$date$</date>
+$endif$
+    </publicationStmt>
+    <sourceDesc>
+$if(sourceDesc)$
+      $sourceDesc$
+$else$
+      <p>Produced by pandoc.</p>
+$endif$
+    </sourceDesc>
+  </fileDesc>
+
+$-- 2020-12-04 Début ajouts YMA par rapport au template tei par défaut de pandoc.
+<xenoData>
+<stylo-metadata xmlns="http://stylo.huma-num.fr/ns/1.0">
+$for(title_f)$
+<title_f>$it$</title_f>
+$endfor$
+
+$for(title)$
+<title>$it$</title>
+$endfor$
+
+$for(subtitle_f)$
+<subtitle_f>$it$</subtitle_f>
+$endfor$
+
+$for(subtitle)$
+<subtitle>$it$</subtitle>
+$endfor$
+
+<authors>
+$for(authors)$
+  <author>
+$for(it/pairs)$    <$it.key$>$it.value$</$it.key$>
+$endfor$  </author>
+$endfor$</authors>
+
+$for(date)$
+<date>$it$</date>
+$endfor$
+
+$for(year)$
+<year>$it$</year>
+$endfor$
+
+$for(month)$
+<month>$it$</month>
+$endfor$
+
+$for(day)$
+<day>$it$</day>
+$endfor$
+
+<abstracts>
+$for(abstract)$
+  <abstract>
+$for(it/pairs)$    <$it.key$>$it.value$</$it.key$>
+$endfor$  </abstract>
+$endfor$</abstracts>
+
+<kwLists>
+$for(keywords)$
+  <kwList>
+$for(it/pairs)$    <$it.key$>$it.value$</$it.key$>
+$endfor$  </kwList>
+$endfor$</kwLists>
+
+<controlledKeywords>
+$for(controlledKeywords)$
+  <controlledKeyword>
+$for(it/pairs)$    <$it.key$>$it.value$</$it.key$>
+$endfor$  </controlledKeyword>
+$endfor$</controlledKeywords>
+
+$for(lang)$
+<lang>$it$</lang>
+$endfor$
+
+$for(id)$
+<id>$it$</id>
+$endfor$
+
+$for(url_article)$
+<url_article>$it$</url_article>
+$endfor$
+
+$for(typeArticle)$
+<typeArticle>$it$</typeArticle>
+$endfor$
+
+$for(publisher)$
+<publisher>$it$</publisher>
+$endfor$
+
+$for(journal)$
+<journal>$it$</journal>
+$endfor$
+
+$for(issnnum)$
+<issnnum>$it$</issnnum>
+$endfor$
+
+$for(prod)$
+<prod>$it$</prod>
+$endfor$
+
+$for(prodnum)$
+<prodnum>$it$</prodnum>
+$endfor$
+
+$for(diffnum)$
+<diffnum>$it$</diffnum>
+$endfor$
+
+$for(rights)$
+<rights>$it$</rights>
+$endfor$
+
+<dossiers>
+$for(dossier)$
+  <dossier>
+$for(it/pairs)$    <$it.key$>$it.value$</$it.key$>
+$endfor$  </dossier>
+$endfor$</dossiers>
+
+$for(link-citations)$
+<link-citations>$it$</link-citations>
+$endfor$
+
+$for(nocite)$
+<nocite>$it$</nocite>
+$endfor$
+
+<directors>
+$for(director)$
+  <director>
+$for(it/pairs)$    <$it.key$>$it.value$</$it.key$>
+$endfor$  </director>
+$endfor$</directors>
+
+<translators>
+$for(translator)$
+  <translator>
+$for(it/pairs)$    <$it.key$>$it.value$</$it.key$>
+$endfor$  </translator>
+$endfor$</translators>
+
+<translations>
+$for(translations)$
+  <translation>
+$for(it/pairs)$    <$it.key$>$it.value$</$it.key$>
+$endfor$  </translation>
+$endfor$</translations>
+
+<articleslies>
+$for(articleslies)$
+  <articleslie>
+$for(it/pairs)$    <$it.key$>$it.value$</$it.key$>
+$endfor$  </articleslie>
+$endfor$</articleslies>
+
+$for(logocredits)$
+<logocredits>$it$</logocredits>
+$endfor$
+</stylo-metadata>
+</xenoData>
+$-- 2020-12-04 Fin ajouts YMA.
+</teiHeader>
+<text>
+$for(include-before)$
+$include-before$
+$endfor$
+<body>
+$body$
+</body>
+$for(include-after)$
+$include-after$
+$endfor$
+</text>
+</TEI>

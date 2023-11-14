@@ -1,0 +1,9 @@
+venv
+__pycache__
+downloads
+styles/styles-zotero.json
+*.egg-info
+htmlcov
+.coverage
+.env
+*.log

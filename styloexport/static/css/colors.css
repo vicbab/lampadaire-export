@@ -1,0 +1,13 @@
+:root {
+    --warning-bg: #fbdbaa;
+    --warning-border: #890e10;
+    --text: var(--nord0);
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --warning-bg: #9b3908;
+        --warning-border: #fdeed1;
+        --bg: var(--nord0);
+        --text: var(--nord6);
+    }
+}

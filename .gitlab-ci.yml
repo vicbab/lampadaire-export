@@ -1,0 +1,50 @@
+# Inspired from
+# https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Python.gitlab-ci.yml
+image: python:latest
+
+# Change pip's cache directory to be inside the project directory since we can
+# only cache local items.
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+# Pip's cache doesn't store the python packages
+# https://pip.pypa.io/en/stable/reference/pip_install/#caching
+#
+# If you want to also cache the installed packages, you have to install
+# them in a virtualenv and cache it as well.
+cache:
+  paths:
+    - .cache/pip
+    - venv/
+
+lint:
+  script:
+    - python -m venv venv
+    - source venv/bin/activate
+    - make dev
+    - make lint
+  except:
+    variables:
+      - $CI_COMMIT_MESSAGE =~ /nolint/
+
+test:
+  script:
+    - apt update -qy
+    - apt install -y apt-utils
+    - apt install -y texlive-latex-base texlive-latex-extra texlive-xetex
+    - python -m venv venv
+    - source venv/bin/activate
+    - make dev
+    - make test
+  except:
+    variables:
+      - $CI_COMMIT_MESSAGE =~ /notest/
+
+pages:
+  stage: deploy
+  script: echo "dummy"
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH && $CI_COMMIT_MESSAGE !~ /nopages/

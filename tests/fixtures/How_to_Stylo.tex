@@ -1,0 +1,526 @@
+\documentclass[12pt,french,letterpaper]{article}
+  \usepackage[utf8]{inputenc}
+\usepackage[spanish,portuguese,german,ukrainian,english,french,italian,main=french]{babel}
+
+\usepackage{grffile}
+\graphicspath{{graphicspath}}
+\usepackage{float}
+\let\origfigure=\figure
+\let\endorigfigure=\endfigure
+\renewenvironment{figure}[1][]{%
+  \origfigure[H]
+}{%
+  \endorigfigure
+}
+\usepackage{epigraph}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage[all]{nowidow}
+\lhead{}
+\chead{Stylo}
+\rhead{}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\newcommand{\frkwlang}{\selectlanguage{french}}
+\newcommand{\enkwlang}{\selectlanguage{english}}
+\newcommand{\eskwlang}{\selectlanguage{spanish}}
+\newcommand{\ptkwlang}{\selectlanguage{portuguese}}
+\newcommand{\dekwlang}{\selectlanguage{german}}
+\newcommand{\ukkwlang}{\selectlanguage{ukrainian}}
+\newcommand{\itkwlang}{\selectlanguage{italian}}
+\newcommand{\arkwlang}{\selectlanguage{arabic}}
+
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+
+\else % if luatex or xelatex
+
+  \usepackage{unicode-math}
+
+
+\newcommand{\titlekwfr}{
+\textbf{Mot-clés}~:
+}
+\newcommand{\titlekwpt}{
+\textbf{Palavras-chave}:
+}
+\newcommand{\titlekwen}{
+\textbf{Keywords}:
+}
+\newcommand{\titlekwit}{
+\textbf{Parole chiave}:
+}
+\newcommand{\titlekwes}{
+\textbf{Palabras clave}:
+}
+\newcommand{\titlekwde}{
+\textbf{Schlüsselwörter}:
+}
+\newcommand{\titlekwuk}{
+\textbf{ключові слова}:
+}
+
+
+\newenvironment{keyword}{\noindent}{\\}
+
+
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+\usepackage[unicode=true]{hyperref}
+\hypersetup{
+            pdftitle={Stylo : Un article type},
+            pdfauthor={Marcello Vitali-Rosati, Nicolas Sauret},
+            pdfkeywords={édition, bac-à-sable, publishing, sandbox},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\newenvironment{Shaded}{}{}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{\textbf{#1}}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\title{Stylo}
+\providecommand{\subtitle}[1]{}
+\subtitle{Un article type}
+\author{Marcello Vitali-Rosati \and Nicolas Sauret}
+\date{}
+
+\begin{document}
+\frkwlang
+\maketitle
+\frkwlang
+
+\begin{abstract}
+
+C'est article est un exemple d'article type édité sur \emph{Stylo}.
+\emph{Stylo} est un éditeur d'article scientifique dédié aux sciences
+humaines. Vous pouvez éditer cet article pour vous entraîner. Une
+documentation plus complète est accessible en cliquant sur le lien
+documentation.
+\end{abstract}
+
+
+
+\thispagestyle{empty}
+\frkwlang
+\begin{keyword}
+\titlekwfr
+	édition, bac-à-sable
+\end{keyword}
+\enkwlang
+\begin{keyword}
+\titlekwen
+	publishing, sandbox
+\end{keyword}
+
+\frkwlang
+
+\frkwlang
+\hypertarget{introduction}{%
+\subsection{Introduction}\label{introduction}}
+
+Stylo est un éditeur de texte scientifique. Pour faire vos premiers pas
+sur Stylo, commencez par éditer cet article.
+
+Stylo utilise le format \emph{markdown} pour baliser et styler le texte.
+Cet article présente la syntaxe de base du markdown, et une
+documentation plus complète
+\href{https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet}{est
+accessible ici}.
+
+Vous pouvez visualiser l'article à tout moment en cliquant sur le bouton
+\textbf{Preview} dans le menu de gauche.
+
+\hypertarget{les-titres}{%
+\subsection{Les titres}\label{les-titres}}
+
+Les titres de niveaux 2 doivent être balisés avec 2 \texttt{\#}
+(\texttt{\#\#}) et non un seul, car le titre de niveau 1 correspond au
+titre de l'article, déclaré dans les métadonnées.
+
+\hypertarget{titres-de-niveau-3}{%
+\subsubsection{Titres de niveau 3}\label{titres-de-niveau-3}}
+
+Les titres de niveaux 3 doivent être balisés avec 3 \texttt{\#} et ainsi
+de suite.
+
+Un saut de ligne correspond au début d'un nouveau paragraphe.
+
+\hypertarget{syntaxe-minimale}{%
+\subsection{Syntaxe minimale}\label{syntaxe-minimale}}
+
+\hypertarget{gras-et-italique}{%
+\subsubsection{Gras et italique}\label{gras-et-italique}}
+
+Voici du texte en \emph{italique}. Voici du texte en \textbf{gras}.
+
+\hypertarget{commentaire}{%
+\subsubsection{Commentaire}\label{commentaire}}
+
+La ligne ci-dessous n'apparaitra pas dans le document final.
+
+\hypertarget{images}{%
+\subsubsection{Images}\label{images}}
+
+On peut insérer des images:
+
+\begin{figure}
+\centering
+\includegraphics{images/test-david-7dc926ed4014a96a908e5fb21de52329.png}
+\caption{Titre de mon image}
+\end{figure}
+
+Notez que le «Titre de mon image» sera pris en compte comme légende de
+l'image dans l'article.
+
+\hypertarget{listes}{%
+\subsubsection{Listes}\label{listes}}
+
+Les listes non numérotées:
+
+\begin{itemize}
+\tightlist
+\item
+  item
+\item
+  item
+\item
+  item
+\end{itemize}
+
+Les listes numérotées:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  item
+\item
+  item
+\item
+  item
+\end{enumerate}
+
+L'ordre des chiffres n'est pas important:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  item
+\item
+  item
+\item
+  item
+\item
+  item
+\end{enumerate}
+
+Cette liste sera automatiquement ordonnée de 1 à 4.
+
+\hypertarget{appareil-critique}{%
+\subsection{Appareil critique}\label{appareil-critique}}
+
+\hypertarget{notes-de-bas-de-page}{%
+\subsubsection{Notes de bas de page}\label{notes-de-bas-de-page}}
+
+Un appel de note de bas de page se fait ainsi\footnote{La note se trouve
+  ensuite à la fin du texte.}. Par ailleurs, la note peut être déclarée
+n'importe où dans le document\footnote{Voici une note déclarée en fin de
+  document}, en fin de document ou juste en dessous par
+exemple\footnote{Une note déclarée ``n'importe où'', ici, juste en
+  dessous du paragraphe correspondant.}.
+
+Le label de la note peut être ce que vous voulez : il peut être
+indifféremment un chiffre ou une suite de caractères\footnote{Voici une
+  note avec un label textuel.}.
+
+Une note de bas de page peut aussi être écrite dans le corps du texte,
+en sortant l'accent circonflexe des crochets\footnote{Ceci est une note
+  de bas de page inline. Elle peut être aussi longue que vous voulez,
+  elle sera transformée comme les autres en note de bas de page}.
+
+\hypertarget{les-ruxe9fuxe9rences}{%
+\subsubsection{Les références}\label{les-ruxe9fuxe9rences}}
+
+Un article scientifique utilise des références. Vous pouvez soit
+importer un fichier
+\href{http://www.bib.umontreal.ca/lgb/BibTeX/default.htm}{bibtex} généré
+par votre logiciel de gestion bibliographique (conseillé), ou bien créer
+manuellement les références au format bibtex.
+
+Les références sont ensuite insérées dans le texte grâce à leur
+\emph{clé bibtex}. Pour récupérer la clé bibtex d'une référence, il
+suffit de cliquer sur la référence souhaitée dans la liste des référence
+ci-contre. La clé est alors ajouté à votre presse-papier, il suffit
+ensuite de la coller dans le texte
+(\protect\hyperlink{ref-goody_raison_1979}{Goody 1979}).
+
+Pour résumer :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  clic sur la référence: copier la clé
+\item
+  coller ou CTRL+V : colle la clé dans le texte où est positionné le
+  curseur (\protect\hyperlink{ref-goody_raison_1979}{Goody 1979}).
+\end{enumerate}
+
+Il est également possible d'ajouter une référence ainsi : « Comme le dit
+Goody (\protect\hyperlink{ref-goody_raison_1979}{1979}), le geste
+\ldots{} »
+
+La clé peut aussi être accompagnée de précision comme ici
+(\protect\hyperlink{ref-goody_raison_1979}{Goody 1979, pp.115}).
+
+Les références citées se retrouveront ensuite à la fin du texte dans la
+section \texttt{\#\#\ Bibliographie}
+
+\hypertarget{les-citations}{%
+\subsubsection{Les citations}\label{les-citations}}
+
+Une citation dans le corps du texte est indiquée par guillemets « Stat
+rosa pristina nomine, nomina nuda tenemus ». Une citation plus longue
+peut être indiquée ainsi :
+
+\begin{quote}
+Stat rosa pristina nomine, nomina nuda tenemus.
+
+la citation se poursuit avec un second paragraphe.
+\end{quote}
+
+\hypertarget{versions-et-export}{%
+\subsection{Versions et export}\label{versions-et-export}}
+
+\hypertarget{muxe9tadonnuxe9es}{%
+\subsubsection{Métadonnées}\label{muxe9tadonnuxe9es}}
+
+Les métadonnées de l'article s'éditent dans le menu en haut à droite.
+Vous pouvez y indiquer le titre, sous-titre, le nom de l'auteur et son
+identifiant de l'Orcid\footnote{L'identifiant Orcid permettra de
+  récupérer automatiquement l'affiliation et la biographie de l'auteur.},
+le résumé et les mot-clés de l'article. Pour les éditeurs de revue, une
+série plus complète de métadonnées est également disponible.
+
+\hypertarget{preview-et-annotation}{%
+\subsubsection{Preview et annotation}\label{preview-et-annotation}}
+
+Chaque version de votre texte peut être prévisualisée et annotée avec
+l'outil d'annotation Hypothes.is. Pour accéder à la preview, cliquez sur
+le bouton \textbf{Preview}. Pour accéder à la version html annotable,
+cliquez sur le bouton \textbf{Anotate}. Vous pouvez alors partager ces
+urls de preview et d'annotation. Chaque url est relative à la version du
+document.
+
+\hypertarget{export}{%
+\subsubsection{Export}\label{export}}
+
+Plusieurs types d'exports sont disponibles :
+
+\begin{itemize}
+\tightlist
+\item
+  XML Erudit : exporte un fichier xml compatible avec le schéma Erudit
+\item
+  Zip : comprend les trois sources de l'article : yaml (métadonnées),
+  bibtex (bibliographie), md (corps de texte)
+\item
+  \ldots{}
+\end{itemize}
+
+\hypertarget{annotations-suxe9mantiques}{%
+\subsection{Annotations sémantiques}\label{annotations-suxe9mantiques}}
+
+Il est possible de structurer sémantiquement votre texte avec des
+simples balises.
+
+Il y a deux types d'annotation sémantiques:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Des annotations qui concernent un ou plusieurs mots dans le même
+  paragraphe
+\item
+  Des annotations qui concernent plusieurs paragraphes
+\end{enumerate}
+
+\hypertarget{annotation-dans-un-paragraphe}{%
+\subsubsection{Annotation dans un
+paragraphe}\label{annotation-dans-un-paragraphe}}
+
+La syntaxe:
+
+{Voici la thèse de l'article}
+
+Produira en HTML:
+
+{Voici la thèse de l'article}
+
+Dans la preview vous pouvez visualiser les classes:
+
+\begin{itemize}
+\tightlist
+\item
+  these
+\item
+  definition
+\item
+  exemple
+\item
+  concept
+\item
+  epigraphe
+\item
+  dedicace
+\item
+  note
+\end{itemize}
+
+\hypertarget{annotation-de-plusieurs-paragraphes}{%
+\subsubsection{Annotation de plusieurs
+paragraphes}\label{annotation-de-plusieurs-paragraphes}}
+
+La syntaxe:
+
+Ici un paragraphe.
+
+Ici un autre paragraphe.
+
+Produira en HTML:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+
+\KeywordTok{\textless{}div} \ErrorTok{class}\OtherTok{=}\StringTok{"maclasse"}\KeywordTok{\textgreater{}}
+  \KeywordTok{\textless{}p\textgreater{}}\NormalTok{Ici un paragraphe.}\KeywordTok{\textless{}/p\textgreater{}}
+  \KeywordTok{\textless{}p\textgreater{}}\NormalTok{Ici un autre paragraphe.}\KeywordTok{\textless{}/p\textgreater{}}
+\KeywordTok{\textless{}/div\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+Pour plus d'informations, consultez la documentation.
+
+\hypertarget{bibliographie}{%
+\subsection{Bibliographie}\label{bibliographie}}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-goody_raison_1979}{}}%
+Goody, Jack. 1979. \emph{La {Raison} graphique. {La} domestication de la
+pensée sauvage.} Le sens commun. Les Editions de Minuit.
+
+\end{CSLReferences}
+
+\end{document}

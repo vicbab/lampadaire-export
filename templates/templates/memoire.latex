@@ -1,0 +1,234 @@
+\documentclass[12pt,letter]{report}
+\usepackage[utf8]{inputenc}    %mettre utf8 à la place de latin si vous utilisez utf8
+\usepackage[T1]{fontenc}
+\usepackage{setspace}
+\renewcommand{\baselinestretch}{2}
+\usepackage[spanish,portuguese,german,ukrainian,english,french,italian,$if(lang)$main=$babel-lang$$endif$]{babel}   
+
+\newcommand{\frkwlang}{\selectlanguage{french}}
+\newcommand{\enkwlang}{\selectlanguage{english}}
+\newcommand{\eskwlang}{\selectlanguage{spanish}}
+\newcommand{\ptkwlang}{\selectlanguage{portuguese}}
+\newcommand{\dekwlang}{\selectlanguage{german}}
+\newcommand{\ukkwlang}{\selectlanguage{ukrainian}}
+\newcommand{\itkwlang}{\selectlanguage{italian}}
+\newcommand{\arkwlang}{\selectlanguage{arabic}}
+
+\newcommand{\titlekwfr}{
+\textbf{Mot-clés}~:
+}
+\newcommand{\titlekwpt}{
+\textbf{Palavra chavre}:
+}
+\newcommand{\titlekwen}{
+\textbf{Keywords}:
+}
+\newcommand{\titlekwit}{
+\textbf{Parole chiave}:
+}
+\newcommand{\titlekwes}{
+\textbf{Palabras clave}:
+}
+\newcommand{\titlekwde}{
+\textbf{Schlüsselwörter}:
+}
+\newcommand{\titlekwuk}{
+\textbf{ключові слова}:
+}
+
+
+\newenvironment{keyword}{\noindent}{\\}
+
+\usepackage[maxlevel=3]{csquotes}
+\usepackage[backend=bibtex,style=verbose-trad1,isbn=false]{biblatex}
+\DefineBibliographyStrings{french}{in={dans},inseries={dans}}
+\usepackage[cyr]{aeguill}
+\usepackage{geometry}
+\geometry{verbose,letterpaper,tmargin=27.5mm,bmargin=27.5mm,lmargin=27.5mm,rmargin=27.5mm}
+\usepackage{graphicx}
+\usepackage{epigraph}
+\setlength\epigraphwidth{13cm}
+\usepackage[center,up,labelfont=bf]{caption}
+\usepackage{float}
+\usepackage{url}
+\newcommand{\guil}[1]{«~{#1}~»}    %guillemets 
+\newcommand{\guill}[1]{``{#1}''}     %guillements dans les guillemets
+
+
+\usepackage{hyperref}
+\hypersetup{
+$if(title-meta)$
+            pdftitle={$title-meta$$if(subtitle)$ : $subtitle$$endif$},
+$endif$
+$if(authors)$
+            pdfauthor={$for(authors)$$authors.forname$ $authors.surname$$sep$, $endfor$},
+$endif$
+$if(keywords)$
+            pdfkeywords={$for(keywords)$$keywords.list$$sep$, $endfor$},
+$endif$
+$if(colorlinks)$
+            colorlinks=true,
+            linkcolor=$if(linkcolor)$$linkcolor$$else$Maroon$endif$,
+            filecolor=$if(filecolor)$$filecolor$$else$Maroon$endif$,
+            citecolor=$if(citecolor)$$citecolor$$else$Blue$endif$,
+            urlcolor=$if(urlcolor)$$urlcolor$$else$Blue$endif$,
+$else$
+            pdfborder={0 0 0},
+$endif$
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+$for(bibliography)$
+\addbibresource{$bibliography$}
+$endfor$
+
+$if(title_f)$
+\title{$title_f$$if(thanks)$\thanks{$thanks$}$endif$}
+$endif$
+$if(subtitle_f)$
+\providecommand{\subtitle}[1]{}
+\subtitle{$subtitle_f$}
+$endif$
+$if(authors)$
+\author{$for(authors)$$authors.forname$ $authors.surname$$sep$ \and $endfor$}
+$endif$
+$if(institute)$
+\providecommand{\institute}[1]{}
+\institute{$for(institute)$$institute$$sep$ \and $endfor$}
+$endif$
+\date{$date$}
+$if(beamer)$
+$if(titlegraphic)$
+\titlegraphic{\includegraphics{$titlegraphic$}}
+$endif$
+$if(logo)$
+\logo{\includegraphics{$logo$}}
+$endif$
+$endif$
+
+
+\begin{document}
+\$lang$kwlang
+\sloppy
+\begin{titlepage}
+  \begin{singlespace}
+\begin{center}
+{Université de Montréal} \vspace{1.5 cm}\\
+\end{center}
+
+\begin{center}
+
+
+\Large{{\bf{$title_f$}}$if(subtitle)$\\$subtitle_f$$endif$}
+
+
+\end{center}
+\vspace{1.5 cm}
+\begin{center}
+\normalsize{$for(authors)$$authors.forname$ $authors.surname$$sep$,  $endfor$}
+\vspace{1.5 cm}
+\end{center}
+
+\begin{center}
+$if(publisher)$$publisher$\\$endif$
+$prod$
+\end{center}
+\vspace{1.5 cm}
+
+\begin{center}
+$prodnum$
+\end{center}
+\vspace{1.5 cm}
+
+
+
+
+
+
+\begin{center}
+$if(date)$$date$\\$endif$
+\vspace{3 cm}
+$rights$
+\end{center}
+  \end{singlespace}
+
+  \newpage
+\end{titlepage} 
+
+
+
+\null
+\newpage
+
+
+\pagenumbering{roman} % numérotation en chiffres romains
+\setcounter{page}{1}
+
+
+\addcontentsline{toc}{chapter}{Résumé}
+$if(abstract)$
+$for(abstract)$
+\$abstract.lang$kwlang
+
+\begin{abstract}
+
+$abstract.text_f$
+\end{abstract}
+
+$endfor$
+$endif$
+
+
+$if(keywords)$
+\thispagestyle{empty}
+$for(keywords)$
+\$keywords.lang$kwlang
+\begin{keyword}
+\titlekw$keywords.lang$
+$keywords.list_f$
+\end{keyword}
+$endfor$
+$endif$
+
+\addcontentsline{toc}{chapter}{Remerciements}
+\chapter*{Remerciements} 
+
+
+$diffnum$
+
+\begin{singlespace}
+\selectlanguage{french}
+\tableofcontents % table des matières
+\listoffigures % si vous avez des images... si vous n'en avez pas, effacez cette ligne
+\end{singlespace}
+
+% fin numérotation en chiffres romains
+% début numérotation en chiffres arabs3
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\$lang$kwlang
+$body$
+
+%dans les fichier vous trouverez des exemples d'usage des différentes commandes de LaTeX
+
+%exemple d'intro
+
+    
+
+\printbibheading %exemple de bibliographie divisée en sections. Pour ajouter des oeuvres non citées,utiliser \nocite
+
+$if(subbiblio)$
+$for(subbiblio)$
+\printbibliography[keyword=$subbiblio.key$,heading=subbibliography,title={$subbiblio.title$}]
+$endfor$
+$else$
+\printbibliography
+$endif$
+% fin numérotation en chiffres arabs
+
+
+\end{document} 

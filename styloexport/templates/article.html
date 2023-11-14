@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+
+{% block extra_head %}
+<style type="text/css">
+    fieldset {
+        border: 1px solid var(--border);
+        border-radius: 5px;
+        margin: 0.5rem 0;
+    }
+    select {
+        width: 100%;
+    }
+    output[data-target="preview"] {
+        display: block;
+        background-color: var(--bg);
+        border-radius: 5px;
+        padding: 1rem;
+    }
+</style>
+{% endblock extra_head %}
+
+{% block main %}
+    {% if article.errors %}
+        <div class="errors">
+            {% for error in article.errors %}
+                <p>{{ error }}</p>
+            {% endfor %}
+        </div>
+    {% else %}
+        <h2>{{ article.metadata.title }}</h2>
+        {% if article.metadata.abstract %}
+            <blockquote>
+                <p>{{ article.metadata.abstract }}</p>
+            </blockquote>
+        {% endif %}
+        {% if article.images %}
+            <details>
+                <summary>Images</summary>
+                {% for image in article.images %}
+                    <figure>
+                        <img alt="{{ image.alt }}" src="{{ url_for('views.downloads', edition=article.edition, domain=article.domain_slug, article_id=article.id, article_slug=article.slug, filename=image.config_path+'/'+image.name) }}" loading="lazy" />
+                        <figcaption>
+                            {{ image.title or image.alt }}
+                            (origine : <a href="{{ image.url }}">{{ image.url }}</a>)
+                        </figcaption>
+                    </figure>
+                {% endfor %}
+            </details>
+        {% endif %}
+        <h3>Exports</h3>
+        <form method="GET"
+            action="{{ url_for('views.export', edition=article.edition, domain=article.domain, article_id=article.id, article_slug=article.slug) }}"
+            {% if form.errors %}class="errors"{% endif %}
+            >
+            {{ form.with_toc }}
+            {{ form.with_ascii }}
+            <fieldset>
+                {% if form.version.errors %}
+                    <div class="errors">
+                        {% for error in form.version.errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                {{ form.version.label }} :<br />
+                {{ form.version }}
+            </fieldset>
+            {% if form.bibliography_style %}
+                <fieldset>
+                    {{ form.bibliography_style.label }} :<br />
+                    {{ form.bibliography_style(data_action="preview#update") }}
+                    <br />
+                    <p>Prévisualisation du rendu bibliographique (3 premiers items) :</p>
+                    <output data-target="preview">
+                        {{ bibliography_preview|safe }}
+                    </output>
+                </fieldset>
+            {% endif %}
+
+            {% if form.formats.choices %}
+                <fieldset>
+                    {% if form.formats.errors %}
+                        <div class="errors">
+                            {% for error in form.formats.errors %}
+                                <p>{{ error }}</p>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                    {{ form.formats.label }} :<br />
+                    {{ form.formats }}
+                </fieldset>
+            {% endif %}
+            <input type="submit" value="Télécharger">
+        </form>
+        <template>
+            <pre>
+                {{ article.bib_original_file_content }}
+            </pre>
+        </template>
+    {% endif %}
+{% endblock main %}
+
+{% block extra_body %}
+<script type="application/vnd.citationstyles.style+xml"
+    data-target="excerpt">{{ bibliography_excerpt }}</script>
+
+<script type="text/javascript">
+    function onload() {
+        const previewTarget = document.querySelector('[data-target="preview"]')
+        const excerptTarget = document.querySelector('[data-target="excerpt"]')
+        const select = document.querySelector('[data-action="preview#update"]')
+
+        select.addEventListener('change', update)
+
+        function checkStatus(response) {
+            if (response.status >= 200 && response.status < 300) {
+                return response
+            } else {
+                const error = new Error(response.statusText)
+                error.response = response
+                previewTarget.innerHTML = `
+                    <p>La génération de la prévisualisation a échoué…</p>
+                `
+                throw error
+            }
+        }
+
+        function update(event) {
+            previewTarget.innerHTML = `
+                <p>Génération de la prévisualisation en cours…</p>
+            `
+            const data = new FormData()
+            data.append('excerpt', excerptTarget.textContent)
+            data.append('bibliography_preview', select.value)
+            fetch('/api/bibliography_preview', {
+                method: 'POST',
+                body: data
+            })
+            .then(checkStatus)
+            .then((response) => response.text())
+            .then((content) => {
+                previewTarget.innerHTML = content
+            })
+        }
+
+        // Otherwise, when refreshing the page, the selection becomes
+        // out of sync because the browser keep the select to the latest
+        // choice (at least Firefox).
+        update()
+
+        // Clean up
+        document.removeEventListener('DOMContentLoaded', onload)
+    }
+
+    if (document.readyState != 'loading') {
+        onload()
+    } else {
+        document.addEventListener('DOMContentLoaded', onload)
+    }
+</script>
+{% endblock extra_body %}

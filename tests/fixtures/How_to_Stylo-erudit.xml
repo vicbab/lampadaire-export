@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns="http://www.erudit.org/xsd/article"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.erudit.org/xsd/article http://www.erudit.org/xsd/article/3.0.0/eruditarticle.xsd"
+          qualtraitement="complet"
+          idproprio="sptemp"
+          typeart="article"
+          lang="fr"
+          ordseq=" ">
+   <admin>
+      <infoarticle>
+         <grdescripteur lang="fr" scheme="http://rameau.bnf.fr">
+            <descripteur>Édition</descripteur>
+         </grdescripteur>
+         <nbpara>47</nbpara>
+         <nbmot>687</nbmot>
+         <nbfig>1</nbfig>
+         <nbtabl>0</nbtabl>
+         <nbaudio>0</nbaudio>
+         <nbvideo>0</nbvideo>
+         <nbrefbiblio>1</nbrefbiblio>
+         <nbnote>6</nbnote>
+      </infoarticle>
+      <revue id="sp02131" lang="fr">
+         <titrerev/>
+         <titrerevabr>sp</titrerevabr>
+         <idissnnum/>
+      </revue>
+      <numero id="sp02131n2022 sp02131n2022">
+         <pub>
+            <annee>2018</annee>
+         </pub>
+         <pubnum>
+            <date typedate="publication">2018-05-29</date>
+         </pubnum>
+      </numero>
+      <editeur>
+         <nomorg/>
+      </editeur>
+      <prod>
+         <nomorg/>
+      </prod>
+      <prodnum>
+         <nomorg/>
+      </prodnum>
+      <diffnum>
+         <nomorg/>
+      </diffnum>
+      <schema nom="Erudit Article" version="3.0.0" lang="fr"/>
+      <droitsauteur>
+         <nomorg/>, 2018</droitsauteur>
+      <droitsauteur>
+         <liensimple xlink:href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr"
+                      xlink:actuate="onRequest"
+                      xlink:show="replace"
+                      xlink:type="simple">
+            <objetmedia flot="ligne">
+               <image typeimage="forme"
+                       xlink:href="http://licensebuttons.net/l/by-sa/4.0/88x31.png"
+                       xlink:actuate="onLoad"
+                       xlink:show="embed"
+                       xlink:type="simple"/>
+            </objetmedia>
+         </liensimple>
+      </droitsauteur>
+   </admin>
+   <liminaire>
+      <grtitre>
+         <surtitre/>
+         <surtitre2>Essai</surtitre2>
+         <titre>Stylo</titre>
+         <sstitre>Un article type</sstitre>
+      </grtitre>
+      <grauteur>
+         <auteur>
+            <nompers>
+               <prenom>Marcello</prenom>
+               <nomfamille>Vitali-Rosati</nomfamille>
+            </nompers>
+         </auteur>
+         <auteur>
+            <nompers>
+               <prenom>Nicolas</prenom>
+               <nomfamille>Sauret</nomfamille>
+            </nompers>
+         </auteur>
+      </grauteur>
+      <resume lang="fr">
+         <alinea>C’est article
+est un exemple d’article type édité sur <marquage typemarq="italique">Stylo</marquage>. <marquage typemarq="italique">Stylo</marquage>
+est un éditeur d’article scientifique dédié aux sciences humaines. Vous
+pouvez éditer cet article pour vous entraîner. Une documentation plus
+complète est accessible en cliquant sur le lien documentation.</alinea>
+      </resume>
+      <grmotcle lang="fr">
+         <motcle>édition</motcle>
+         <motcle>bac-à-sable</motcle>
+      </grmotcle>
+      <grmotcle lang="en">
+         <motcle>publishing</motcle>
+         <motcle>sandbox</motcle>
+      </grmotcle>
+   </liminaire>
+   <corps>
+      <section1>
+         <titre>Introduction</titre>
+         <para>
+            <alinea>Stylo est un éditeur de texte scientifique. Pour faire vos premiers
+  pas sur Stylo, commencez par éditer cet article.</alinea>
+         </para>
+         <para>
+            <alinea>Stylo utilise le format <marquage typemarq="italique">markdown</marquage> pour baliser et styler le
+  texte. Cet article présente la syntaxe de base du markdown, et une
+  documentation plus complète <liensimple xlink:type="simple"
+                            xlink:href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">est
+  accessible ici</liensimple>.</alinea>
+         </para>
+         <para>
+            <alinea>Vous pouvez visualiser l’article à tout moment en cliquant sur le
+  bouton <marquage typemarq="gras">Preview</marquage> dans le menu de gauche.</alinea>
+         </para>
+      </section1>
+      <section1>
+         <titre>Les titres</titre>
+         <para>
+            <alinea>Les titres de niveaux 2 doivent être balisés avec 2 <code xmlns="http://www.w3.org/1999/xhtml"
+                      xmlns:dc="http://purl.org/dc/terms/"
+                      xmlns:foaf="http://xmlns.com/foaf/0.1/">#</code>
+  (<code xmlns="http://www.w3.org/1999/xhtml"
+                      xmlns:dc="http://purl.org/dc/terms/"
+                      xmlns:foaf="http://xmlns.com/foaf/0.1/">##</code>) et non un seul, car le titre de niveau 1 correspond
+  au titre de l’article, déclaré dans les métadonnées.</alinea>
+         </para>
+         <section2>
+            <titre>Titres de niveau 3</titre>
+            <para>
+               <alinea>Les titres de niveaux 3 doivent être balisés avec 3 <code xmlns="http://www.w3.org/1999/xhtml"
+                         xmlns:dc="http://purl.org/dc/terms/"
+                         xmlns:foaf="http://xmlns.com/foaf/0.1/">#</code>
+  et ainsi de suite.</alinea>
+            </para>
+            <para>
+               <alinea>Un saut de ligne correspond au début d’un nouveau paragraphe.</alinea>
+            </para>
+         </section2>
+      </section1>
+      <section1>
+         <titre>Syntaxe minimale</titre>
+         <section2>
+            <titre>Gras et italique</titre>
+            <para>
+               <alinea>Voici du texte en <marquage typemarq="italique">italique</marquage>. Voici du texte en
+  <marquage typemarq="gras">gras</marquage>.</alinea>
+            </para>
+         </section2>
+         <section2>
+            <titre>Commentaire</titre>
+            <para>
+               <alinea>La ligne ci-dessous n’apparaitra pas dans le document final.</alinea>
+            </para>
+         </section2>
+         <section2>
+            <titre>Images</titre>
+            <para>
+               <alinea>On peut insérer des images:</alinea>
+            </para>
+            <figure>
+               <legende lang="fr">
+                  <alinea>Titre de mon image</alinea>
+               </legende>
+               <objetmedia flot="bloc">
+                  <image id="" typeimage="figure" xlink:type="simple"/>
+               </objetmedia>
+            </figure>
+            <para>
+               <alinea>Notez que le «Titre de mon image» sera pris en compte comme légende
+  de l’image dans l’article.</alinea>
+            </para>
+         </section2>
+         <section2>
+            <titre>Listes</titre>
+            <para>
+               <alinea>Les listes non numérotées:</alinea>
+            </para>
+            <listenonord signe="disque">
+               <elemliste>
+                  <alinea>item</alinea>
+               </elemliste>
+               <elemliste>
+                  <alinea>item</alinea>
+               </elemliste>
+               <elemliste>
+                  <alinea>item</alinea>
+               </elemliste>
+            </listenonord>
+            <para>
+               <alinea>Les listes numérotées:</alinea>
+            </para>
+            <listeord numeration="decimal">
+               <elemliste>
+                  <alinea>item</alinea>
+               </elemliste>
+               <elemliste>
+                  <alinea>item</alinea>
+               </elemliste>
+               <elemliste>
+                  <alinea>item</alinea>
+               </elemliste>
+            </listeord>
+            <para>
+               <alinea>L’ordre des chiffres n’est pas important:</alinea>
+            </para>
+            <listeord numeration="decimal">
+               <elemliste>
+                  <alinea>item</alinea>
+               </elemliste>
+               <elemliste>
+                  <alinea>item</alinea>
+               </elemliste>
+               <elemliste>
+                  <alinea>item</alinea>
+               </elemliste>
+               <elemliste>
+                  <alinea>item</alinea>
+               </elemliste>
+            </listeord>
+            <para>
+               <alinea>Cette liste sera automatiquement ordonnée de 1 à 4.</alinea>
+            </para>
+         </section2>
+      </section1>
+      <section1>
+         <titre>Appareil critique</titre>
+         <section2>
+            <titre>Notes de bas de page</titre>
+            <para>
+               <alinea>Un appel de note de bas de page se fait ainsi<renvoi typeref="note" idref="sdfootnote1sym">1</renvoi>.
+  Par ailleurs, la note peut être déclarée n’importe où dans le
+  document<renvoi typeref="note" idref="sdfootnote2sym">2</renvoi>, en fin de document ou juste en
+  dessous par exemple<renvoi typeref="note" idref="sdfootnote3sym">3</renvoi>.</alinea>
+            </para>
+            <para>
+               <alinea>Le label de la note peut être ce que vous voulez : il peut être
+  indifféremment un chiffre ou une suite de caractères<renvoi typeref="note" idref="sdfootnote4sym">4</renvoi>.</alinea>
+            </para>
+            <para>
+               <alinea>Une note de bas de page peut aussi être écrite dans le corps du
+  texte, en sortant l’accent circonflexe des crochets<renvoi typeref="note" idref="sdfootnote5sym">5</renvoi>.</alinea>
+            </para>
+         </section2>
+         <section2>
+            <titre>Les références</titre>
+            <para>
+               <alinea>Un article scientifique utilise des références. Vous pouvez soit
+  importer un fichier <liensimple xlink:type="simple"
+                               xlink:href="http://www.bib.umontreal.ca/lgb/BibTeX/default.htm">bibtex</liensimple>
+  généré par votre logiciel de gestion bibliographique (conseillé), ou
+  bien créer manuellement les références au format bibtex.</alinea>
+            </para>
+            <para>
+               <alinea>Les références sont ensuite insérées dans le texte grâce à leur
+  <marquage typemarq="italique">clé bibtex</marquage>. Pour récupérer la clé bibtex d’une référence, il
+  suffit de cliquer sur la référence souhaitée dans la liste des
+  référence ci-contre. La clé est alors ajouté à votre presse-papier, il
+  suffit ensuite de la coller dans le texte (Goody 1979).</alinea>
+            </para>
+            <para>
+               <alinea>Pour résumer :</alinea>
+            </para>
+            <listeord numeration="decimal">
+               <elemliste>
+                  <alinea>clic sur la référence: copier la clé</alinea>
+               </elemliste>
+               <elemliste>
+                  <alinea>coller ou CTRL+V : colle la clé dans le texte où est positionné le
+  curseur (Goody
+  1979).</alinea>
+               </elemliste>
+            </listeord>
+            <para>
+               <alinea>Il est également possible d’ajouter une référence ainsi : « Comme
+  le dit Goody (1979),
+  le geste … »</alinea>
+            </para>
+            <para>
+               <alinea>La clé peut aussi être accompagnée de précision comme ici (Goody 1979,
+  pp.115).</alinea>
+            </para>
+            <para>
+               <alinea>Les références citées se retrouveront ensuite à la fin du texte
+  dans la section <code xmlns="http://www.w3.org/1999/xhtml"
+                         xmlns:dc="http://purl.org/dc/terms/"
+                         xmlns:foaf="http://xmlns.com/foaf/0.1/">## Bibliographie</code>
+               </alinea>
+            </para>
+         </section2>
+         <section2>
+            <titre>Les citations</titre>
+            <para>
+               <alinea>Une citation dans le corps du texte est indiquée par guillemets «
+  Stat rosa pristina nomine, nomina nuda tenemus ». Une citation plus
+  longue peut être indiquée ainsi :</alinea>
+            </para>
+            <bloccitation>
+               <alinea>Stat rosa pristina nomine, nomina nuda tenemus.</alinea>
+               <alinea>la citation se poursuit avec un second paragraphe.</alinea>
+            </bloccitation>
+         </section2>
+      </section1>
+      <section1>
+         <titre>Versions et export</titre>
+         <section2>
+            <titre>Métadonnées</titre>
+            <para>
+               <alinea>Les métadonnées de l’article s’éditent dans le menu en haut à
+  droite. Vous pouvez y indiquer le titre, sous-titre, le nom de
+  l’auteur et son identifiant de l’Orcid<renvoi typeref="note" idref="sdfootnote6sym">6</renvoi>,
+  le résumé et les mot-clés de l’article. Pour les éditeurs de revue,
+  une série plus complète de métadonnées est également disponible.</alinea>
+            </para>
+         </section2>
+         <section2>
+            <titre>Preview et annotation</titre>
+            <para>
+               <alinea>Chaque version de votre texte peut être prévisualisée et annotée
+  avec l’outil d’annotation Hypothes.is. Pour accéder à la preview,
+  cliquez sur le bouton <marquage typemarq="gras">Preview</marquage>. Pour accéder à la
+  version html annotable, cliquez sur le bouton
+  <marquage typemarq="gras">Anotate</marquage>. Vous pouvez alors partager ces urls de
+  preview et d’annotation. Chaque url est relative à la version du
+  document.</alinea>
+            </para>
+         </section2>
+         <section2>
+            <titre>Export</titre>
+            <para>
+               <alinea>Plusieurs types d’exports sont disponibles :</alinea>
+            </para>
+            <listenonord signe="disque">
+               <elemliste>
+                  <alinea>XML Erudit : exporte un fichier xml compatible avec le schéma
+  Erudit</alinea>
+               </elemliste>
+               <elemliste>
+                  <alinea>Zip : comprend les trois sources de l’article : yaml
+  (métadonnées), bibtex (bibliographie), md (corps de texte)</alinea>
+               </elemliste>
+               <elemliste>
+                  <alinea>…</alinea>
+               </elemliste>
+            </listenonord>
+         </section2>
+      </section1>
+      <section1>
+         <titre>Annotations sémantiques</titre>
+         <para>
+            <alinea>Il est possible de structurer sémantiquement votre texte avec des
+  simples balises.</alinea>
+         </para>
+         <para>
+            <alinea>Il y a deux types d’annotation sémantiques:</alinea>
+         </para>
+         <listeord numeration="decimal">
+            <elemliste>
+               <alinea>Des annotations qui concernent un ou plusieurs mots dans le même
+  paragraphe</alinea>
+            </elemliste>
+            <elemliste>
+               <alinea>Des annotations qui concernent plusieurs paragraphes</alinea>
+            </elemliste>
+         </listeord>
+         <section2>
+            <titre>Annotation dans un paragraphe</titre>
+            <para>
+               <alinea>La syntaxe:</alinea>
+            </para>
+            <para>
+               <alinea>Voici la thèse de l’article</alinea>
+            </para>
+            <para>
+               <alinea>Produira en HTML:</alinea>
+            </para>
+            <para>
+               <alinea>Voici la thèse de l’article</alinea>
+            </para>
+            <para>
+               <alinea>Dans la preview vous pouvez visualiser les classes:</alinea>
+            </para>
+            <listenonord signe="disque">
+               <elemliste>
+                  <alinea>these</alinea>
+               </elemliste>
+               <elemliste>
+                  <alinea>definition</alinea>
+               </elemliste>
+               <elemliste>
+                  <alinea>exemple</alinea>
+               </elemliste>
+               <elemliste>
+                  <alinea>concept</alinea>
+               </elemliste>
+               <elemliste>
+                  <alinea>epigraphe</alinea>
+               </elemliste>
+               <elemliste>
+                  <alinea>dedicace</alinea>
+               </elemliste>
+               <elemliste>
+                  <alinea>note</alinea>
+               </elemliste>
+            </listenonord>
+         </section2>
+         <section2>
+            <titre>Annotation de plusieurs paragraphes</titre>
+            <para>
+               <alinea>La syntaxe:</alinea>
+            </para>
+            <div xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:dc="http://purl.org/dc/terms/"
+                  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+                  class="maclasse">
+               <p>Ici un paragraphe.</p>
+               <p>Ici un autre paragraphe.</p>
+            </div>
+            <para>
+               <alinea>Produira en HTML:</alinea>
+            </para>
+            <div xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:dc="http://purl.org/dc/terms/"
+                  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+                  class="sourceCode"
+                  id="cb1">
+               <pre class="sourceCode html">
+                  <code class="sourceCode html">
+                     <span id="cb1-1">
+                        <a href="#cb1-1" aria-hidden="true" tabindex="-1"/>
+                     </span>
+                     <span id="cb1-2">
+                        <a href="#cb1-2" aria-hidden="true" tabindex="-1"/>
+                        <span class="kw">&lt;div</span>
+                        <span class="er">class</span>
+                        <span class="ot">=</span>
+                        <span class="st">"maclasse"</span>
+                        <span class="kw">&gt;</span>
+                     </span>
+                     <span id="cb1-3">
+                        <a href="#cb1-3" aria-hidden="true" tabindex="-1"/>
+                        <span class="kw">&lt;p&gt;</span>Ici un paragraphe.<span class="kw">&lt;/p&gt;</span>
+                     </span>
+                     <span id="cb1-4">
+                        <a href="#cb1-4" aria-hidden="true" tabindex="-1"/>
+                        <span class="kw">&lt;p&gt;</span>Ici un autre paragraphe.<span class="kw">&lt;/p&gt;</span>
+                     </span>
+                     <span id="cb1-5">
+                        <a href="#cb1-5" aria-hidden="true" tabindex="-1"/>
+                        <span class="kw">&lt;/div&gt;</span>
+                     </span>
+                  </code>
+               </pre>
+            </div>
+            <para>
+               <alinea>Pour plus d’informations, consultez la documentation.</alinea>
+            </para>
+         </section2>
+      </section1>
+   </corps>
+   <partiesann lang="fr">
+      <grbiblio>
+         <biblio>
+            <titre>Bibliographie</titre>
+            <refbiblio>
+  Goody, Jack. 1979. <marquage typemarq="italique">La Raison graphique.
+  La domestication de la pensée sauvage.</marquage> Le sens
+  commun. Les Editions de Minuit.
+  </refbiblio>
+         </biblio>
+      </grbiblio>
+      <grnote>
+         <note id="sdfootnote1sym">
+            <no>1</no>
+            <alinea>La note se trouve ensuite à la fin du texte.</alinea>
+         </note>
+         <note id="sdfootnote2sym">
+            <no>2</no>
+            <alinea>Voici une note déclarée en fin de document</alinea>
+         </note>
+         <note id="sdfootnote3sym">
+            <no>3</no>
+            <alinea>Une note déclarée “n’importe où”, ici, juste en
+  dessous du paragraphe correspondant.</alinea>
+         </note>
+         <note id="sdfootnote4sym">
+            <no>4</no>
+            <alinea>Voici une note avec un label textuel.</alinea>
+         </note>
+         <note id="sdfootnote5sym">
+            <no>5</no>
+            <alinea>Ceci est une note de bas de page inline. Elle peut
+  être aussi longue que vous voulez, elle sera transformée comme les
+  autres en note de bas de page</alinea>
+         </note>
+         <note id="sdfootnote6sym">
+            <no>6</no>
+            <alinea>L’identifiant Orcid permettra de récupérer
+  automatiquement l’affiliation et la biographie de l’auteur.</alinea>
+         </note>
+      </grnote>
+   </partiesann>
+</article>

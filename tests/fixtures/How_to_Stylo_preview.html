@@ -1,0 +1,254 @@
+<article>
+  <section id="introduction" class="level2">
+  <h2>Introduction</h2>
+  <p>Stylo est un éditeur de texte scientifique. Pour faire vos premiers
+  pas sur Stylo, commencez par éditer cet article.</p>
+  <p>Stylo utilise le format <em>markdown</em> pour baliser et styler le
+  texte. Cet article présente la syntaxe de base du markdown, et une
+  documentation plus complète <a
+  href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">est
+  accessible ici</a>.</p>
+  <p>Vous pouvez visualiser l’article à tout moment en cliquant sur le
+  bouton <strong>Preview</strong> dans le menu de gauche.</p>
+  </section>
+  <section id="les-titres" class="level2">
+  <h2>Les titres</h2>
+  <p>Les titres de niveaux 2 doivent être balisés avec 2 <code>#</code>
+  (<code>##</code>) et non un seul, car le titre de niveau 1 correspond
+  au titre de l’article, déclaré dans les métadonnées.</p>
+  <section id="titres-de-niveau-3" class="level3">
+  <h3>Titres de niveau 3</h3>
+  <p>Les titres de niveaux 3 doivent être balisés avec 3 <code>#</code>
+  et ainsi de suite.</p>
+  <p>Un saut de ligne correspond au début d’un nouveau paragraphe.</p>
+  </section>
+  </section>
+  <section id="syntaxe-minimale" class="level2">
+  <h2>Syntaxe minimale</h2>
+  <section id="gras-et-italique" class="level3">
+  <h3>Gras et italique</h3>
+  <p>Voici du texte en <em>italique</em>. Voici du texte en
+  <strong>gras</strong>.</p>
+  </section>
+  <section id="commentaire" class="level3">
+  <h3>Commentaire</h3>
+  <p>La ligne ci-dessous n’apparaitra pas dans le document final.</p>
+  <!-- Cette ligne sera traitée comme un commentaire, elle n'apparaitra pas dans le document final -->
+  </section>
+  <section id="images" class="level3">
+  <h3>Images</h3>
+  <p>On peut insérer des images:</p>
+  <figure>
+  <img
+  src="https://avatars2.githubusercontent.com/u/16691667?s=200&amp;v=4"
+  alt="Titre de mon image" />
+  <figcaption aria-hidden="true">Titre de mon image</figcaption>
+  </figure>
+  <p>Notez que le «Titre de mon image» sera pris en compte comme légende
+  de l’image dans l’article.</p>
+  </section>
+  <section id="listes" class="level3">
+  <h3>Listes</h3>
+  <p>Les listes non numérotées:</p>
+  <ul>
+  <li>item</li>
+  <li>item</li>
+  <li>item</li>
+  </ul>
+  <p>Les listes numérotées:</p>
+  <ol type="1">
+  <li>item</li>
+  <li>item</li>
+  <li>item</li>
+  </ol>
+  <p>L’ordre des chiffres n’est pas important:</p>
+  <ol type="1">
+  <li>item</li>
+  <li>item</li>
+  <li>item</li>
+  <li>item</li>
+  </ol>
+  <p>Cette liste sera automatiquement ordonnée de 1 à 4.</p>
+  </section>
+  </section>
+  <section id="appareil-critique" class="level2">
+  <h2>Appareil critique</h2>
+  <section id="notes-de-bas-de-page" class="level3">
+  <h3>Notes de bas de page</h3>
+  <p>Un appel de note de bas de page se fait ainsi<a href="#fn1"
+  class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.
+  Par ailleurs, la note peut être déclarée n’importe où dans le
+  document<a href="#fn2" class="footnote-ref" id="fnref2"
+  role="doc-noteref"><sup>2</sup></a>, en fin de document ou juste en
+  dessous par exemple<a href="#fn3" class="footnote-ref" id="fnref3"
+  role="doc-noteref"><sup>3</sup></a>.</p>
+  <p>Le label de la note peut être ce que vous voulez : il peut être
+  indifféremment un chiffre ou une suite de caractères<a href="#fn4"
+  class="footnote-ref" id="fnref4"
+  role="doc-noteref"><sup>4</sup></a>.</p>
+  <p>Une note de bas de page peut aussi être écrite dans le corps du
+  texte, en sortant l’accent circonflexe des crochets<a href="#fn5"
+  class="footnote-ref" id="fnref5"
+  role="doc-noteref"><sup>5</sup></a>.</p>
+  </section>
+  <section id="les-références" class="level3">
+  <h3>Les références</h3>
+  <p>Un article scientifique utilise des références. Vous pouvez soit
+  importer un fichier <a
+  href="http://www.bib.umontreal.ca/lgb/BibTeX/default.htm">bibtex</a>
+  généré par votre logiciel de gestion bibliographique (conseillé), ou
+  bien créer manuellement les références au format bibtex.</p>
+  <p>Les références sont ensuite insérées dans le texte grâce à leur
+  <em>clé bibtex</em>. Pour récupérer la clé bibtex d’une référence, il
+  suffit de cliquer sur la référence souhaitée dans la liste des
+  référence ci-contre. La clé est alors ajouté à votre presse-papier, il
+  suffit ensuite de la coller dans le texte <span class="citation"
+  data-cites="goody_raison_1979">(<a href="#ref-goody_raison_1979"
+  role="doc-biblioref">Goody 1979</a>)</span>.</p>
+  <p>Pour résumer :</p>
+  <ol type="1">
+  <li>clic sur la référence: copier la clé</li>
+  <li>coller ou CTRL+V : colle la clé dans le texte où est positionné le
+  curseur <span class="citation" data-cites="goody_raison_1979">(<a
+  href="#ref-goody_raison_1979" role="doc-biblioref">Goody
+  1979</a>)</span>.</li>
+  </ol>
+  <p>Il est également possible d’ajouter une référence ainsi : « Comme
+  le dit <span class="citation" data-cites="goody_raison_1979">Goody (<a
+  href="#ref-goody_raison_1979" role="doc-biblioref">1979</a>)</span>,
+  le geste … »</p>
+  <p>La clé peut aussi être accompagnée de précision comme ici <span
+  class="citation" data-cites="goody_raison_1979">(<a
+  href="#ref-goody_raison_1979" role="doc-biblioref">Goody 1979,
+  pp.115</a>)</span>.</p>
+  <p>Les références citées se retrouveront ensuite à la fin du texte
+  dans la section <code>## Bibliographie</code></p>
+  </section>
+  <section id="les-citations" class="level3">
+  <h3>Les citations</h3>
+  <p>Une citation dans le corps du texte est indiquée par guillemets «
+  Stat rosa pristina nomine, nomina nuda tenemus ». Une citation plus
+  longue peut être indiquée ainsi :</p>
+  <blockquote>
+  <p>Stat rosa pristina nomine, nomina nuda tenemus.</p>
+  <p>la citation se poursuit avec un second paragraphe.</p>
+  </blockquote>
+  </section>
+  </section>
+  <section id="versions-et-export" class="level2">
+  <h2>Versions et export</h2>
+  <section id="métadonnées" class="level3">
+  <h3>Métadonnées</h3>
+  <p>Les métadonnées de l’article s’éditent dans le menu en haut à
+  droite. Vous pouvez y indiquer le titre, sous-titre, le nom de
+  l’auteur et son identifiant de l’Orcid<a href="#fn6"
+  class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>,
+  le résumé et les mot-clés de l’article. Pour les éditeurs de revue,
+  une série plus complète de métadonnées est également disponible.</p>
+  </section>
+  <section id="preview-et-annotation" class="level3">
+  <h3>Preview et annotation</h3>
+  <p>Chaque version de votre texte peut être prévisualisée et annotée
+  avec l’outil d’annotation Hypothes.is. Pour accéder à la preview,
+  cliquez sur le bouton <strong>Preview</strong>. Pour accéder à la
+  version html annotable, cliquez sur le bouton
+  <strong>Anotate</strong>. Vous pouvez alors partager ces urls de
+  preview et d’annotation. Chaque url est relative à la version du
+  document.</p>
+  </section>
+  <section id="export" class="level3">
+  <h3>Export</h3>
+  <p>Plusieurs types d’exports sont disponibles :</p>
+  <ul>
+  <li>XML Erudit : exporte un fichier xml compatible avec le schéma
+  Erudit</li>
+  <li>Zip : comprend les trois sources de l’article : yaml
+  (métadonnées), bibtex (bibliographie), md (corps de texte)</li>
+  <li>…</li>
+  </ul>
+  </section>
+  </section>
+  <section id="annotations-sémantiques" class="level2">
+  <h2>Annotations sémantiques</h2>
+  <p>Il est possible de structurer sémantiquement votre texte avec des
+  simples balises.</p>
+  <p>Il y a deux types d’annotation sémantiques:</p>
+  <ol type="1">
+  <li>Des annotations qui concernent un ou plusieurs mots dans le même
+  paragraphe</li>
+  <li>Des annotations qui concernent plusieurs paragraphes</li>
+  </ol>
+  <section id="annotation-dans-un-paragraphe" class="level3">
+  <h3>Annotation dans un paragraphe</h3>
+  <p>La syntaxe:</p>
+  <p><span class="these">Voici la thèse de l’article</span></p>
+  <p>Produira en HTML:</p>
+  <p><span class="these">Voici la thèse de l’article</span></p>
+  <p>Dans la preview vous pouvez visualiser les classes:</p>
+  <ul>
+  <li>these</li>
+  <li>definition</li>
+  <li>exemple</li>
+  <li>concept</li>
+  <li>epigraphe</li>
+  <li>dedicace</li>
+  <li>note</li>
+  </ul>
+  </section>
+  <section id="annotation-de-plusieurs-paragraphes" class="level3">
+  <h3>Annotation de plusieurs paragraphes</h3>
+  <p>La syntaxe:</p>
+  <div class="maclasse">
+  <p>Ici un paragraphe.</p>
+  <p>Ici un autre paragraphe.</p>
+  </div>
+  <p>Produira en HTML:</p>
+  <div class="sourceCode" id="cb1"><pre
+  class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;maclasse&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;p&gt;</span>Ici un paragraphe.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;p&gt;</span>Ici un autre paragraphe.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code></pre></div>
+  <p>Pour plus d’informations, consultez la documentation.</p>
+  </section>
+  </section>
+  <section id="bibliographie" class="level2">
+  <h2>Bibliographie</h2>
+  <!-- La bibliographie apparaîtra automatiquement en fin d'article, à cet endroit -->
+  <div id="refs" class="references csl-bib-body hanging-indent"
+  role="doc-bibliography">
+  <div id="ref-goody_raison_1979" class="csl-entry"
+  role="doc-biblioentry">
+  Goody, Jack. 1979. <em>La <span>Raison</span> graphique.
+  <span>La</span> domestication de la pensée sauvage.</em> Le sens
+  commun. Les Editions de Minuit.
+  </div>
+  </div>
+  </section>
+  <section class="footnotes footnotes-end-of-document"
+  role="doc-endnotes">
+  <hr />
+  <ol>
+  <li id="fn1" role="doc-endnote"><p>La note se trouve ensuite à la fin
+  du texte.<a href="#fnref1" class="footnote-back"
+  role="doc-backlink">↩︎</a></p></li>
+  <li id="fn2" role="doc-endnote"><p>Voici une note déclarée en fin de
+  document<a href="#fnref2" class="footnote-back"
+  role="doc-backlink">↩︎</a></p></li>
+  <li id="fn3" role="doc-endnote"><p>Une note déclarée “n’importe où”,
+  ici, juste en dessous du paragraphe correspondant.<a href="#fnref3"
+  class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+  <li id="fn4" role="doc-endnote"><p>Voici une note avec un label
+  textuel.<a href="#fnref4" class="footnote-back"
+  role="doc-backlink">↩︎</a></p></li>
+  <li id="fn5" role="doc-endnote"><p>Ceci est une note de bas de page
+  inline. Elle peut être aussi longue que vous voulez, elle sera
+  transformée comme les autres en note de bas de page<a href="#fnref5"
+  class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+  <li id="fn6" role="doc-endnote"><p>L’identifiant Orcid permettra de
+  récupérer automatiquement l’affiliation et la biographie de
+  l’auteur.<a href="#fnref6" class="footnote-back"
+  role="doc-backlink">↩︎</a></p></li>
+  </ol>
+  </section>
+  </article>

@@ -1,0 +1,73 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "stylo-export"
+dynamic = ["version"]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+  "Flask",
+  "flask-cors",
+  "Flask-WTF",
+  "httpx",
+  "python-dotenv",
+  "python-slugify",
+  "pyyaml",
+  "wrapt",
+]
+
+[project.optional-dependencies]
+dev = [
+  "black",
+  "blinker",
+  "hatch",
+  "mypy",
+  "pdoc3",
+  "pip-tools",
+  "pytest",
+  "pytest-cov",
+  "pytest-httpx",
+  "pytest-mock",
+  "pytest-watch",
+  "ruff",
+  "types-PyYAML",
+  "types-python-slugify",
+]
+
+[tool.hatch.version]
+path = "styloexport/__init__.py"
+
+[tool.ruff]
+select = ["E", "F", "I", "W", "PTH", "RUF"]
+fixable = ["I"]
+# Espace insecable (guillemets) + fine insecable (ponctuation double, chiffres)
+# + vraie apostrophe.
+allowed-confusables = [" ", " ", "’"]
+show-source = true
+
+[tool.coverage.report]
+show_missing = true
+
+[tool.coverage.run]
+source = ["styloexport"]
+omit = ["styloexport/wsgi.py"]
+
+[tool.mypy]
+mypy_path = "stubs"
+ignore_missing_imports = true
+
+# strict mode (almost)
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+#disallow_subclassing_any = true
+disallow_untyped_decorators = false
+warn_redundant_casts = true
+warn_return_any = true
+warn_unused_ignores = true
+warn_unused_configs = true
+no_implicit_optional = true
+

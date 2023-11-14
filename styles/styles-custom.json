@@ -1,0 +1,2556 @@
+[
+  {
+    "title": "ACME: An International Journal for Critical Geographies",
+    "name": "acme-an-international-journal-for-critical-geographies",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2018-06-17 04:54:57",
+    "href": "https://www.zotero.org/styles/acme-an-international-journal-for-critical-geographies"
+  },
+  {
+    "title": "Acta Philosophica",
+    "titleShort": "ActaPhil",
+    "name": "acta-philosophica",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2018-05-22 00:59:23",
+    "href": "https://www.zotero.org/styles/acta-philosophica"
+  },
+  {
+    "title": "Afro-\u00c1sia (Portugu\u00eas - Brasil)",
+    "titleShort": "AA",
+    "name": "afro-asia",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-12-23 18:57:51",
+    "href": "https://www.zotero.org/styles/afro-asia"
+  },
+  {
+    "title": "AIB studi (Italiano)",
+    "name": "aib-studi",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-14 05:16:25",
+    "href": "https://www.zotero.org/styles/aib-studi"
+  },
+  {
+    "title": "Albert-Ludwigs-Universit\u00e4t Freiburg - Geschichte (Deutsch)",
+    "name": "universitat-freiburg-geschichte",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "history",
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-10 05:28:52",
+    "href": "https://www.zotero.org/styles/universitat-freiburg-geschichte"
+  },
+  {
+    "title": "Alternatif Politika",
+    "titleShort": "Altern. Polit.",
+    "name": "alternatif-politika",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "social_science",
+        "political_science",
+        "humanities"
+      ]
+    },
+    "updated": "2021-06-27 12:16:01",
+    "href": "https://www.zotero.org/styles/alternatif-politika"
+  },
+  {
+    "title": "Annals of Public and Cooperative Economics",
+    "name": "annals-of-public-and-cooperative-economics",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-12-30 20:19:25",
+    "href": "https://www.zotero.org/styles/annals-of-public-and-cooperative-economics"
+  },
+  {
+    "title": "Antiquit\u00e9s africaines",
+    "titleShort": "AntAfr",
+    "name": "antiquites-africaines",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities",
+        "history"
+      ]
+    },
+    "updated": "2022-02-23 17:10:45",
+    "href": "https://www.zotero.org/styles/antiquites-africaines"
+  },
+  {
+    "title": "Aquitania (Fran\u00e7ais)",
+    "name": "aquitania",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2022-01-02 01:47:37",
+    "href": "https://www.zotero.org/styles/aquitania"
+  },
+  {
+    "title": "\u00c1rb\u00f3k Hins \u00edslenzka fornleifaf\u00e9lags (\u00cdslenska)",
+    "titleShort": "HIF",
+    "name": "arbok-hins-islenzka-fornleifafelags",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-06-11 02:48:31",
+    "href": "https://www.zotero.org/styles/arbok-hins-islenzka-fornleifafelags"
+  },
+  {
+    "title": "Archaeonautica",
+    "titleShort": "Archaeonautica",
+    "name": "archaeonautica",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities",
+        "history"
+      ]
+    },
+    "updated": "2022-06-26 18:34:07",
+    "href": "https://www.zotero.org/styles/archaeonautica"
+  },
+  {
+    "title": "Arch\u00e9ologies et Sciences de l'Antiquit\u00e9 (Fran\u00e7ais)",
+    "titleShort": "ArScAn",
+    "name": "archeologies-et-sciences-de-lantiquite",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-12 04:50:30",
+    "href": "https://www.zotero.org/styles/archeologies-et-sciences-de-lantiquite"
+  },
+  {
+    "title": "ArcheoSciences (Fran\u00e7ais)",
+    "name": "archeosciences",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities",
+        "science"
+      ]
+    },
+    "updated": "2021-10-07 02:42:26",
+    "href": "https://www.zotero.org/styles/archeosciences"
+  },
+  {
+    "title": "Art Libraries Society of North America: ARLIS/NA Reviews",
+    "titleShort": "ARLIS/NA Reviews",
+    "name": "art-libraries-society-of-north-america-arlisna-reviews",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-12-31 11:11:34",
+    "href": "https://www.zotero.org/styles/art-libraries-society-of-north-america-arlisna-reviews"
+  },
+  {
+    "title": "Australasian Journal of Philosophy",
+    "titleShort": "AJP",
+    "name": "australasian-journal-of-philosophy",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "philosophy",
+        "humanities"
+      ]
+    },
+    "updated": "2022-12-30 21:19:48",
+    "href": "https://www.zotero.org/styles/australasian-journal-of-philosophy"
+  },
+  {
+    "title": "b.i.t.online (note, Deutsch)",
+    "name": "bitonline",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-10 05:28:52",
+    "href": "https://www.zotero.org/styles/bitonline"
+  },
+  {
+    "title": "Bakhtiniana: Journal of Discourse Studies",
+    "name": "bakhtiniana-journal-of-discourse-studies",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-07-01 02:56:53",
+    "href": "https://www.zotero.org/styles/bakhtiniana-journal-of-discourse-studies"
+  },
+  {
+    "title": "Beltz - P\u00e4dagogik (Deutsch)",
+    "name": "beltz-padagogik",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-10 05:28:52",
+    "href": "https://www.zotero.org/styles/beltz-padagogik"
+  },
+  {
+    "title": "Berghahn Books (author-date, English - UK)",
+    "name": "berghahn-books-author-date-en-gb",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities",
+        "social_science"
+      ]
+    },
+    "updated": "2019-06-28 03:56:31",
+    "href": "https://www.zotero.org/styles/berghahn-books-author-date-en-gb"
+  },
+  {
+    "title": "Berlin School of Economics and Law - International Marketing Management",
+    "name": "berlin-school-of-economics-and-law-international-marketing-management",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "social_science",
+        "humanities"
+      ]
+    },
+    "updated": "2020-11-27 19:51:13",
+    "href": "https://www.zotero.org/styles/berlin-school-of-economics-and-law-international-marketing-management"
+  },
+  {
+    "title": "Betriebswirtschaftliche Forschung und Praxis (Deutsch)",
+    "titleShort": "BFuP",
+    "name": "betriebswirtschaftliche-forschung-und-praxis",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-08-31 03:41:28",
+    "href": "https://www.zotero.org/styles/betriebswirtschaftliche-forschung-und-praxis"
+  },
+  {
+    "title": "Bibliothecae.it (Italiano)",
+    "name": "bibliothecae-it",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-12-23 21:12:59",
+    "href": "https://www.zotero.org/styles/bibliothecae-it"
+  },
+  {
+    "title": "Biens symboliques / Symbolic Goods",
+    "titleShort": "BS/SG",
+    "name": "biens-symboliques-symbolic-goods",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities",
+        "sociology"
+      ]
+    },
+    "updated": "2019-01-10 05:11:32",
+    "href": "https://www.zotero.org/styles/biens-symboliques-symbolic-goods"
+  },
+  {
+    "title": "Body & Society",
+    "name": "body-and-society",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities",
+        "social_science"
+      ]
+    },
+    "updated": "2019-02-07 23:35:19",
+    "href": "https://www.zotero.org/styles/body-and-society"
+  },
+  {
+    "title": "Bristol University Press",
+    "name": "bristol-university-press",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "social_science",
+        "humanities"
+      ]
+    },
+    "updated": "2023-02-27 14:31:35",
+    "href": "https://www.zotero.org/styles/bristol-university-press"
+  },
+  {
+    "title": "Business Ethics: A European Review",
+    "name": "business-ethics-a-european-review",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2018-05-22 00:59:23",
+    "href": "https://www.zotero.org/styles/business-ethics-a-european-review"
+  },
+  {
+    "title": "Cahiers d'ethnomusicologie (Fran\u00e7ais)",
+    "name": "cahiers-d-ethnomusicologie",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-12 04:50:30",
+    "href": "https://www.zotero.org/styles/cahiers-d-ethnomusicologie"
+  },
+  {
+    "title": "Cahiers du Centre Gustave-Glotz (Fran\u00e7ais)",
+    "name": "cahiers-du-centre-gustave-glotz",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "history",
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-12 04:50:30",
+    "href": "https://www.zotero.org/styles/cahiers-du-centre-gustave-glotz"
+  },
+  {
+    "title": "Cahiers Mondes Anciens (Fran\u00e7ais)",
+    "titleShort": "CMA",
+    "name": "cahiers-mondes-anciens",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2022-12-17 04:03:24",
+    "href": "https://www.zotero.org/styles/cahiers-mondes-anciens"
+  },
+  {
+    "title": "Campus adventiste du Sal\u00e8ve - Facult\u00e9 adventiste de th\u00e9ologie (Fran\u00e7ais)",
+    "titleShort": "FAT France",
+    "name": "campus-adventiste-du-saleve-faculte-adventiste-de-theologie",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "theology",
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-12 04:50:30",
+    "href": "https://www.zotero.org/styles/campus-adventiste-du-saleve-faculte-adventiste-de-theologie"
+  },
+  {
+    "title": "Chicago Manual of Style 16th edition (figures and illustrations)",
+    "titleShort": "chicago-figures",
+    "name": "chicago-figures",
+    "dependent": 0,
+    "categories": {
+      "format": "numeric",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2016-10-08 20:00:52",
+    "href": "https://www.zotero.org/styles/chicago-figures"
+  },
+  {
+    "title": "Civilt\u00e0 Italiana (Italiano)",
+    "name": "civilta-italiana",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-06-28 02:24:28",
+    "href": "https://www.zotero.org/styles/civilta-italiana"
+  },
+  {
+    "title": "Clio Medica",
+    "name": "clio-medica",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "history",
+        "humanities"
+      ]
+    },
+    "updated": "2018-05-22 00:59:23",
+    "href": "https://www.zotero.org/styles/clio-medica"
+  },
+  {
+    "title": "Collections \u00e9lectroniques de l'INHA (author-date, Fran\u00e7ais)",
+    "name": "collections-electroniques-de-l-inha-author-date",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "history",
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-12 04:50:30",
+    "href": "https://www.zotero.org/styles/collections-electroniques-de-l-inha-author-date"
+  },
+  {
+    "title": "Collections \u00e9lectroniques de l'INHA (full note, Fran\u00e7ais)",
+    "name": "collections-electroniques-de-l-inha-full-note",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "history",
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-12 04:50:30",
+    "href": "https://www.zotero.org/styles/collections-electroniques-de-l-inha-full-note"
+  },
+  {
+    "title": "Communication et Langages",
+    "name": "communication-et-langages",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2016-02-18 19:12:02",
+    "href": "https://www.zotero.org/styles/communication-et-langages"
+  },
+  {
+    "title": "Developing World Bioethics",
+    "titleShort": "DWB",
+    "name": "developing-world-bioethics",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2019-11-07 04:51:24",
+    "href": "https://www.zotero.org/styles/developing-world-bioethics"
+  },
+  {
+    "title": "Development and Change",
+    "name": "development-and-change",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities",
+        "social_science"
+      ]
+    },
+    "updated": "2018-05-22 00:59:23",
+    "href": "https://www.zotero.org/styles/development-and-change"
+  },
+  {
+    "title": "Digital Humanities im deutschsprachigen Raum (Deutsch)",
+    "titleShort": "DHd (Deutsch)",
+    "name": "digital-humanities-im-deutschsprachigen-raum",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2022-02-23 12:43:41",
+    "href": "https://www.zotero.org/styles/digital-humanities-im-deutschsprachigen-raum"
+  },
+  {
+    "title": "Digital Scholarship in the Humanities",
+    "name": "digital-scholarship-in-the-humanities",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2019-11-09 03:48:16",
+    "href": "https://www.zotero.org/styles/digital-scholarship-in-the-humanities"
+  },
+  {
+    "title": "Early Music History",
+    "titleShort": "EMH",
+    "name": "early-music-history",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2022-12-30 21:01:31",
+    "href": "https://www.zotero.org/styles/early-music-history"
+  },
+  {
+    "title": "\u00c9cole Pratique des Hautes \u00c9tudes - Sciences historiques et philologiques (Fran\u00e7ais)",
+    "titleShort": "EPHE-SHP",
+    "name": "ecole-pratique-des-hautes-etudes-sciences-historiques-et-philologiques",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "history",
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-12 04:50:30",
+    "href": "https://www.zotero.org/styles/ecole-pratique-des-hautes-etudes-sciences-historiques-et-philologiques"
+  },
+  {
+    "title": "Effective Altruism Wiki",
+    "titleShort": "EA Wiki",
+    "name": "effective-altruism-wiki",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities",
+        "science"
+      ]
+    },
+    "updated": "2022-01-07 11:46:06",
+    "href": "https://www.zotero.org/styles/effective-altruism-wiki"
+  },
+  {
+    "title": "ENS de Lyon - Centre d'ing\u00e9nierie documentaire (Fran\u00e7ais)",
+    "titleShort": "CID",
+    "name": "ens-de-lyon-centre-d-ingenierie-documentaire",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "philosophy",
+        "humanities",
+        "political_science"
+      ]
+    },
+    "updated": "2021-02-12 04:50:30",
+    "href": "https://www.zotero.org/styles/ens-de-lyon-centre-d-ingenierie-documentaire"
+  },
+  {
+    "title": "Environmental Values",
+    "name": "environmental-values",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-05-06 03:58:48",
+    "href": "https://www.zotero.org/styles/environmental-values"
+  },
+  {
+    "title": "Estuaries and Coasts",
+    "name": "estuaries-and-coasts",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "generic-base",
+        "humanities"
+      ]
+    },
+    "updated": "2021-07-08 03:47:33",
+    "href": "https://www.zotero.org/styles/estuaries-and-coasts"
+  },
+  {
+    "title": "Ethnomusicology",
+    "name": "ethnomusicology",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2018-05-22 00:59:23",
+    "href": "https://www.zotero.org/styles/ethnomusicology"
+  },
+  {
+    "title": "EVA Berlin Konferenz (Deutsch)",
+    "name": "eva-berlin-konferenz",
+    "dependent": 0,
+    "categories": {
+      "format": "numeric",
+      "fields": [
+        "humanities",
+        "engineering"
+      ]
+    },
+    "updated": "2021-02-10 05:28:52",
+    "href": "https://www.zotero.org/styles/eva-berlin-konferenz"
+  },
+  {
+    "title": "Facolt\u00e0 Teologica dell'Italia Settentrionale - Milano (titoli di riviste non abbreviati, Italiano)",
+    "titleShort": "FTIS-it",
+    "name": "facolta-teologica-dell-italia-settentrionale-milano",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "theology",
+        "humanities",
+        "philosophy",
+        "social_science"
+      ]
+    },
+    "updated": "2021-02-14 05:16:25",
+    "href": "https://www.zotero.org/styles/facolta-teologica-dell-italia-settentrionale-milano"
+  },
+  {
+    "title": "Family Business Review",
+    "titleShort": "FBR",
+    "name": "family-business-review",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2018-05-22 00:59:23",
+    "href": "https://www.zotero.org/styles/family-business-review"
+  },
+  {
+    "title": "First Monday",
+    "name": "first-monday",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2018-04-01 15:23:10",
+    "href": "https://www.zotero.org/styles/first-monday"
+  },
+  {
+    "title": "Focaal\u2014Journal of Global and Historical Anthropology",
+    "name": "focaal-journal-of-global-and-historical-anthropology",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-10-05 09:29:09",
+    "href": "https://www.zotero.org/styles/focaal-journal-of-global-and-historical-anthropology"
+  },
+  {
+    "title": "GAIA",
+    "name": "gaia",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2020-12-25 21:44:50",
+    "href": "https://www.zotero.org/styles/gaia"
+  },
+  {
+    "title": "Gallia Pr\u00e9histoire (Fran\u00e7ais)",
+    "titleShort": "GP",
+    "name": "gallia-prehistoire",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "history",
+        "humanities",
+        "anthropology"
+      ]
+    },
+    "updated": "2021-06-04 02:57:15",
+    "href": "https://www.zotero.org/styles/gallia-prehistoire"
+  },
+  {
+    "title": "Geistes- und Kulturwissenschaften (Heilmann) (Deutsch)",
+    "name": "geistes-und-kulturwissenschaften-heilmann",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-10 05:28:52",
+    "href": "https://www.zotero.org/styles/geistes-und-kulturwissenschaften-heilmann"
+  },
+  {
+    "title": "Geschichte und Gesellschaft",
+    "name": "geschichte-und-gesellschaft",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2022-01-02 01:47:58",
+    "href": "https://www.zotero.org/styles/geschichte-und-gesellschaft"
+  },
+  {
+    "title": "Gesellschaft fur Popularmusikforschung (Deutsch)",
+    "titleShort": "GfPM",
+    "name": "gesellschaft-fur-popularmusikforschung",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-10 05:28:52",
+    "href": "https://www.zotero.org/styles/gesellschaft-fur-popularmusikforschung"
+  },
+  {
+    "title": "Government and Opposition",
+    "name": "government-and-opposition",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "political_science",
+        "humanities"
+      ]
+    },
+    "updated": "2020-02-14 05:03:14",
+    "href": "https://www.zotero.org/styles/government-and-opposition"
+  },
+  {
+    "title": "Health and Human Rights Journal",
+    "titleShort": "HHR",
+    "name": "health-and-human-rights-journal",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2020-12-09 05:41:34",
+    "href": "https://www.zotero.org/styles/health-and-human-rights-journal"
+  },
+  {
+    "title": "Heiliger Dienst (Deutsch)",
+    "name": "heiliger-dienst",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities",
+        "theology"
+      ]
+    },
+    "updated": "2021-02-10 05:28:52",
+    "href": "https://www.zotero.org/styles/heiliger-dienst"
+  },
+  {
+    "title": "Hiob Ludolf Centre for Ethiopian Studies",
+    "titleShort": "HLCES (Hamburg)",
+    "name": "hiob-ludolf-centre-for-ethiopian-studies",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-09-27 10:27:11",
+    "href": "https://www.zotero.org/styles/hiob-ludolf-centre-for-ethiopian-studies"
+  },
+  {
+    "title": "Hiob Ludolf Centre for Ethiopian Studies (long names)",
+    "titleShort": "HLCES (Hamburg) long names",
+    "name": "hiob-ludolf-centre-for-ethiopian-studies-long-names",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-09-27 10:27:11",
+    "href": "https://www.zotero.org/styles/hiob-ludolf-centre-for-ethiopian-studies-long-names"
+  },
+  {
+    "title": "Hiob Ludolf Centre for Ethiopian Studies (with URL/DOI)",
+    "titleShort": "HLCES (Hamburg)",
+    "name": "hiob-ludolf-centre-for-ethiopian-studies-with-url-doi",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-09-27 10:27:11",
+    "href": "https://www.zotero.org/styles/hiob-ludolf-centre-for-ethiopian-studies-with-url-doi"
+  },
+  {
+    "title": "Historical Social Research",
+    "titleShort": "HSR",
+    "name": "historical-social-research",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "history",
+        "humanities"
+      ]
+    },
+    "updated": "2018-05-22 00:59:23",
+    "href": "https://www.zotero.org/styles/historical-social-research"
+  },
+  {
+    "title": "Ilahiyat Studies (full note)",
+    "titleShort": "IS",
+    "name": "ilahiyat-studies",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2018-08-13 15:47:21",
+    "href": "https://www.zotero.org/styles/ilahiyat-studies"
+  },
+  {
+    "title": "Im Gespr\u00e4ch - Hefte der Martin Buber-Gesellschaft (Deutsch)",
+    "titleShort": "Im Gespr\u00e4ch",
+    "name": "im-gesprach",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-10 05:28:52",
+    "href": "https://www.zotero.org/styles/im-gesprach"
+  },
+  {
+    "title": "INContext: Studies in Translation and Interculturalism",
+    "name": "incontext-studies-in-translation-and-interculturalism",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2022-04-17 23:26:16",
+    "href": "https://www.zotero.org/styles/incontext-studies-in-translation-and-interculturalism"
+  },
+  {
+    "title": "INDIANA",
+    "name": "indiana",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2017-06-29 23:51:05",
+    "href": "https://www.zotero.org/styles/indiana"
+  },
+  {
+    "title": "Industrial Relations",
+    "name": "industrial-relations",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2019-07-20 13:40:53",
+    "href": "https://www.zotero.org/styles/industrial-relations"
+  },
+  {
+    "title": "Instituto de Investigaciones sobre la Universidad y la Educaci\u00f3n - Moderno (autor-fecha, Espa\u00f1ol)",
+    "titleShort": "IISUE Moderno",
+    "name": "instituto-de-investigaciones-sobre-la-universidad-y-la-educacion-moderno",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "social_science",
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-11 04:03:08",
+    "href": "https://www.zotero.org/styles/instituto-de-investigaciones-sobre-la-universidad-y-la-educacion-moderno"
+  },
+  {
+    "title": "International Security",
+    "name": "international-security",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2018-10-29 01:37:06",
+    "href": "https://www.zotero.org/styles/international-security"
+  },
+  {
+    "title": "InVisu",
+    "name": "invisu",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2019-02-10 13:42:06",
+    "href": "https://www.zotero.org/styles/invisu"
+  },
+  {
+    "title": "Isabella Stewart Gardner Museum",
+    "name": "isabella-stewart-gardner-museum",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2017-09-04 23:37:55",
+    "href": "https://www.zotero.org/styles/isabella-stewart-gardner-museum"
+  },
+  {
+    "title": "\u0130SNAD At\u0131f Sistemi 2. Edisyon (dipnotlu)",
+    "titleShort": "\u0130SNAD",
+    "name": "isnad-dipnotlu",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "theology",
+        "humanities",
+        "social_science"
+      ]
+    },
+    "updated": "2022-06-26 00:58:19",
+    "href": "https://www.zotero.org/styles/isnad-dipnotlu"
+  },
+  {
+    "title": "\u0130SNAD At\u0131f Sistemi 2. Edisyon (metini\u00e7i)",
+    "titleShort": "\u0130SNAD",
+    "name": "isnad-metinici",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "theology",
+        "humanities",
+        "social_science"
+      ]
+    },
+    "updated": "2022-06-26 00:47:42",
+    "href": "https://www.zotero.org/styles/isnad-metinici"
+  },
+  {
+    "title": "Ius Ecclesiae",
+    "titleShort": "IusEcc",
+    "name": "ius-ecclesiae",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2018-05-22 00:59:23",
+    "href": "https://www.zotero.org/styles/ius-ecclesiae"
+  },
+  {
+    "title": "Jahrbuch der \u00d6sterreichischen Byzantinischen Gesellschaft",
+    "name": "jahrbuch-der-osterreichischen-byzantinischen-gesellschaft",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2018-05-22 00:59:23",
+    "href": "https://www.zotero.org/styles/jahrbuch-der-osterreichischen-byzantinischen-gesellschaft"
+  },
+  {
+    "title": "Jahrbuch f\u00fcr evangelikale Theologie (Deutsch)",
+    "titleShort": "JETh",
+    "name": "jahrbuch-fur-evangelikale-theologie",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities",
+        "theology"
+      ]
+    },
+    "updated": "2021-02-10 05:28:52",
+    "href": "https://www.zotero.org/styles/jahrbuch-fur-evangelikale-theologie"
+  },
+  {
+    "title": "JCOM: Journal of Science Communication",
+    "name": "jcom-journal-of-science-communication",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2022-01-05 13:27:55",
+    "href": "https://www.zotero.org/styles/jcom-journal-of-science-communication"
+  },
+  {
+    "title": "Journal f\u00fcr Kunstgeschichte",
+    "name": "journal-fur-kunstgeschichte",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "history",
+        "humanities"
+      ]
+    },
+    "updated": "2018-03-28 23:10:24",
+    "href": "https://www.zotero.org/styles/journal-fur-kunstgeschichte"
+  },
+  {
+    "title": "Journal of Advertising Research",
+    "titleShort": "JAR",
+    "name": "journal-of-advertising-research",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2019-10-03 04:34:43",
+    "href": "https://www.zotero.org/styles/journal-of-advertising-research"
+  },
+  {
+    "title": "Journal of Intercultural Studies",
+    "titleShort": "JICS",
+    "name": "journal-of-intercultural-studies",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-11-13 19:58:18",
+    "href": "https://www.zotero.org/styles/journal-of-intercultural-studies"
+  },
+  {
+    "title": "Journal of International Peacekeeping",
+    "titleShort": "JOUP",
+    "name": "journal-of-international-peacekeeping",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2019-11-10 23:15:38",
+    "href": "https://www.zotero.org/styles/journal-of-international-peacekeeping"
+  },
+  {
+    "title": "Journal of Music Technology and Education",
+    "titleShort": "JMTE",
+    "name": "journal-of-music-technology-and-education",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2018-05-22 00:59:23",
+    "href": "https://www.zotero.org/styles/journal-of-music-technology-and-education"
+  },
+  {
+    "title": "Journal of Refugee Studies",
+    "titleShort": "JRS",
+    "name": "journal-of-refugee-studies",
+    "dependent": 0,
+    "categories": {
+      "format": "numeric",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2019-11-14 03:51:29",
+    "href": "https://www.zotero.org/styles/journal-of-refugee-studies"
+  },
+  {
+    "title": "Journal of the Association of Environmental and Resource Economists",
+    "titleShort": "JAERE",
+    "name": "journal-of-the-association-of-environmental-and-resource-economists",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2017-03-05 18:40:08",
+    "href": "https://www.zotero.org/styles/journal-of-the-association-of-environmental-and-resource-economists"
+  },
+  {
+    "title": "Journal on Efficiency and Responsibility in Education and Science",
+    "titleShort": "ERIES",
+    "name": "journal-on-efficiency-and-responsibility-in-education-and-science",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2022-07-10 19:57:44",
+    "href": "https://www.zotero.org/styles/journal-on-efficiency-and-responsibility-in-education-and-science"
+  },
+  {
+    "title": "King's College London - Harvard",
+    "name": "harvard-kings-college-london",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2018-12-28 20:54:27",
+    "href": "https://www.zotero.org/styles/harvard-kings-college-london"
+  },
+  {
+    "title": "KIT Karlsruher Institut f\u00fcr Technologie Germanistik NDL Neuere Deutsche Literaturwissenschaft (German)",
+    "titleShort": "KITGERNDL",
+    "name": "kit-karlsruher-institut-fur-technologie-germanistik-ndl-neuere-deutsche-literaturwissenschaft",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities",
+        "literature"
+      ]
+    },
+    "updated": "2021-12-01 15:46:37",
+    "href": "https://www.zotero.org/styles/kit-karlsruher-institut-fur-technologie-germanistik-ndl-neuere-deutsche-literaturwissenschaft"
+  },
+  {
+    "title": "Kritische Ausgabe (Deutsch)",
+    "name": "kritische-ausgabe",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-10 05:28:52",
+    "href": "https://www.zotero.org/styles/kritische-ausgabe"
+  },
+  {
+    "title": "La Revue des Sciences de Gestion (Fran\u00e7ais)",
+    "titleShort": "RSG",
+    "name": "la-revue-des-sciences-de-gestion",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "social_science",
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-12 04:50:30",
+    "href": "https://www.zotero.org/styles/la-revue-des-sciences-de-gestion"
+  },
+  {
+    "title": "La Trobe University - Harvard",
+    "name": "la-trobe-university-harvard",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities",
+        "generic-base"
+      ]
+    },
+    "updated": "2020-11-22 23:30:10",
+    "href": "https://www.zotero.org/styles/la-trobe-university-harvard"
+  },
+  {
+    "title": "Leonardo",
+    "name": "leonardo",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2019-03-16 01:48:29",
+    "href": "https://www.zotero.org/styles/leonardo"
+  },
+  {
+    "title": "Les Cahiers du journalisme (Fran\u00e7ais)",
+    "titleShort": "Cahiers du journalisme",
+    "name": "les-cahiers-du-journalisme",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "social_science",
+        "humanities",
+        "communications"
+      ]
+    },
+    "updated": "2021-08-24 02:48:24",
+    "href": "https://www.zotero.org/styles/les-cahiers-du-journalisme"
+  },
+  {
+    "title": "Lettres et Sciences Humaines (biblio et notes, Fran\u00e7ais)",
+    "name": "lettres-et-sciences-humaines-fr",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities",
+        "literature"
+      ]
+    },
+    "updated": "2021-02-12 04:50:30",
+    "href": "https://www.zotero.org/styles/lettres-et-sciences-humaines-fr"
+  },
+  {
+    "title": "Management & Avenir (Fran\u00e7ais)",
+    "name": "management-et-avenir",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-12 04:50:30",
+    "href": "https://www.zotero.org/styles/management-et-avenir"
+  },
+  {
+    "title": "Mediaeval Studies",
+    "name": "mediaeval-studies",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2019-07-08 04:39:57",
+    "href": "https://www.zotero.org/styles/mediaeval-studies"
+  },
+  {
+    "title": "Medical History",
+    "name": "medical-history",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "history",
+        "humanities"
+      ]
+    },
+    "updated": "2018-05-22 00:59:23",
+    "href": "https://www.zotero.org/styles/medical-history"
+  },
+  {
+    "title": "Mercator-Institut f\u00fcr Sprachf\u00f6rderung und Deutsch als Zweitsprache (Deutsch)",
+    "name": "mercator-institut-fur-sprachforderung-und-deutsch-als-zweitsprache",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities",
+        "linguistics",
+        "psychology"
+      ]
+    },
+    "updated": "2021-02-10 05:28:52",
+    "href": "https://www.zotero.org/styles/mercator-institut-fur-sprachforderung-und-deutsch-als-zweitsprache"
+  },
+  {
+    "title": "Meta",
+    "name": "meta",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2022-06-13 14:20:48",
+    "href": "https://www.zotero.org/styles/meta"
+  },
+  {
+    "title": "Method & Theory in the Study of Religion",
+    "titleShort": "MTSR",
+    "name": "method-and-theory-in-the-study-of-religion",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "theology",
+        "humanities"
+      ]
+    },
+    "updated": "2020-09-27 22:05:07",
+    "href": "https://www.zotero.org/styles/method-and-theory-in-the-study-of-religion"
+  },
+  {
+    "title": "Mots (French)",
+    "titleShort": "Mots",
+    "name": "mots",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2023-05-18 13:04:13",
+    "href": "https://www.zotero.org/styles/mots"
+  },
+  {
+    "title": "Nations and Nationalism",
+    "name": "nations-and-nationalism",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2019-07-16 03:54:01",
+    "href": "https://www.zotero.org/styles/nations-and-nationalism"
+  },
+  {
+    "title": "NCCR Mediality. Medienwandel - Medienwechsel - Medienwissen (Deutsch)",
+    "titleShort": "NCCR Mediality",
+    "name": "nccr-mediality",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-10 05:28:52",
+    "href": "https://www.zotero.org/styles/nccr-mediality"
+  },
+  {
+    "title": "Nouvelles perspectives en sciences sociales (Fran\u00e7ais - Canada)",
+    "titleShort": "NPSS",
+    "name": "nouvelles-perspectives-en-sciences-sociales",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-12 04:50:30",
+    "href": "https://www.zotero.org/styles/nouvelles-perspectives-en-sciences-sociales"
+  },
+  {
+    "title": "Organised Sound",
+    "name": "organised-sound",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2020-09-19 16:33:58",
+    "href": "https://www.zotero.org/styles/organised-sound"
+  },
+  {
+    "title": "Oxford University Press HUMSOC",
+    "titleShort": "Oxford HUMSOC",
+    "name": "oxford-university-press-humsoc",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities",
+        "social_science"
+      ]
+    },
+    "updated": "2016-06-19 22:02:06",
+    "href": "https://www.zotero.org/styles/oxford-university-press-humsoc"
+  },
+  {
+    "title": "Pallas (French)",
+    "titleShort": "Pallas",
+    "name": "pallas",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2022-11-12 22:29:30",
+    "href": "https://www.zotero.org/styles/pallas"
+  },
+  {
+    "title": "Philippika (Deutsch)",
+    "name": "philippika",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "history",
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-10 05:28:52",
+    "href": "https://www.zotero.org/styles/philippika"
+  },
+  {
+    "title": "Philipps-Universit\u00e4t Marburg - Erziehungswissenschaften (note, Deutsch)",
+    "name": "philipps-universitat-marburg-note",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-10 05:28:52",
+    "href": "https://www.zotero.org/styles/philipps-universitat-marburg-note"
+  },
+  {
+    "title": "Polygraphia (Italiano)",
+    "name": "polygraphia",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "history",
+        "anthropology",
+        "humanities"
+      ]
+    },
+    "updated": "2022-12-29 18:33:32",
+    "href": "https://www.zotero.org/styles/polygraphia"
+  },
+  {
+    "title": "Presses universitaires de Paris Nanterre (note, Fran\u00e7ais)",
+    "titleShort": "PU Paris Nanterre",
+    "name": "presses-universitaires-de-paris-nanterre",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "social_science",
+        "humanities",
+        "generic-base"
+      ]
+    },
+    "updated": "2021-04-11 18:26:40",
+    "href": "https://www.zotero.org/styles/presses-universitaires-de-paris-nanterre"
+  },
+  {
+    "title": "Publicatiewijzer voor de Archeologie (Nederlands)",
+    "name": "publicatiewijzer-voor-de-archeologie",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2023-04-01 03:01:04",
+    "href": "https://www.zotero.org/styles/publicatiewijzer-voor-de-archeologie"
+  },
+  {
+    "title": "Quaderni Materialisti (Italiano)",
+    "name": "quaderni-materialisti",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities",
+        "linguistics",
+        "philosophy"
+      ]
+    },
+    "updated": "2021-02-14 05:16:25",
+    "href": "https://www.zotero.org/styles/quaderni-materialisti"
+  },
+  {
+    "title": "R&D Management",
+    "name": "r-and-d-management",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2019-12-04 05:05:06",
+    "href": "https://www.zotero.org/styles/r-and-d-management"
+  },
+  {
+    "title": "Rassegna degli Archivi di Stato (bibliografia generale o ragionata commentata, sorted chronological, italiano)",
+    "titleShort": "RAS (bibliografia generale)",
+    "name": "rassegna-degli-archivi-di-stato-bibliografia-generale",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities",
+        "history"
+      ]
+    },
+    "updated": "2022-12-17 04:02:26",
+    "href": "https://www.zotero.org/styles/rassegna-degli-archivi-di-stato-bibliografia-generale"
+  },
+  {
+    "title": "Rassegna degli Archivi di Stato (citazioni estese, italiano)",
+    "titleShort": "RAS (citazioni estese, italiano)",
+    "name": "rassegna-degli-archivi-di-stato",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities",
+        "history"
+      ]
+    },
+    "updated": "2022-09-08 01:39:39",
+    "href": "https://www.zotero.org/styles/rassegna-degli-archivi-di-stato"
+  },
+  {
+    "title": "Recherches en Sciences de Gestion (Fran\u00e7ais)",
+    "name": "recherches-en-sciences-de-gestion",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-12 04:50:30",
+    "href": "https://www.zotero.org/styles/recherches-en-sciences-de-gestion"
+  },
+  {
+    "title": "REVER - Revista de Estudos da Religi\u00e3o",
+    "name": "rever-revista-de-estudos-da-religiao",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2019-09-15 20:26:26",
+    "href": "https://www.zotero.org/styles/rever-revista-de-estudos-da-religiao"
+  },
+  {
+    "title": "Revista N\u00f3esis",
+    "name": "revista-noesis",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2016-12-21 05:18:06",
+    "href": "https://www.zotero.org/styles/revista-noesis"
+  },
+  {
+    "title": "Revue Europe\u0301enne des Migrations Internationales",
+    "titleShort": "REMI",
+    "name": "revue-europeenne-des-migrations-internationales",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2017-10-12 00:34:43",
+    "href": "https://www.zotero.org/styles/revue-europeenne-des-migrations-internationales"
+  },
+  {
+    "title": "Revue fran\u00e7aise d'administration publique (Fran\u00e7ais)",
+    "titleShort": "RFAP",
+    "name": "revue-francaise-d-administration-publique",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "social_science",
+        "humanities",
+        "political_science"
+      ]
+    },
+    "updated": "2021-02-12 04:50:30",
+    "href": "https://www.zotero.org/styles/revue-francaise-d-administration-publique"
+  },
+  {
+    "title": "Revue fran\u00e7aise de gestion (Fran\u00e7ais)",
+    "titleShort": "RFG",
+    "name": "revue-francaise-de-gestion",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "social_science",
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-12 04:50:30",
+    "href": "https://www.zotero.org/styles/revue-francaise-de-gestion"
+  },
+  {
+    "title": "Romanian Humanities (Rom\u00e2n\u0103)",
+    "name": "romanian-humanities",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-15 03:41:57",
+    "href": "https://www.zotero.org/styles/romanian-humanities"
+  },
+  {
+    "title": "Sascha Foerster - Geisteswissenschaft (Deutsch)",
+    "titleShort": "zoteroSF",
+    "name": "foerster-geisteswissenschaft",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities",
+        "generic-base"
+      ]
+    },
+    "updated": "2021-02-10 05:28:52",
+    "href": "https://www.zotero.org/styles/foerster-geisteswissenschaft"
+  },
+  {
+    "title": "S\u00e9minaire Saint-Sulpice - Ecole Th\u00e9ologie (Fran\u00e7ais)",
+    "titleShort": "SSSET",
+    "name": "seminaire-saint-sulpice-ecole-theologie",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "theology",
+        "humanities"
+      ]
+    },
+    "updated": "2021-05-10 02:51:01",
+    "href": "https://www.zotero.org/styles/seminaire-saint-sulpice-ecole-theologie"
+  },
+  {
+    "title": "Sken\u00e8. Journal of Theatre and Drama Studies",
+    "titleShort": "JTDS",
+    "name": "skene-journal-of-theatre-and-drama-studies",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2020-05-12 04:29:22",
+    "href": "https://www.zotero.org/styles/skene-journal-of-theatre-and-drama-studies"
+  },
+  {
+    "title": "S\u00f6dert\u00f6rns h\u00f6gskola - Oxford",
+    "titleShort": "SHO",
+    "name": "sodertorns-hogskola-oxford",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities",
+        "social_science"
+      ]
+    },
+    "updated": "2023-03-05 19:05:02",
+    "href": "https://www.zotero.org/styles/sodertorns-hogskola-oxford"
+  },
+  {
+    "title": "South African Actuarial Journal",
+    "titleShort": "SAAJ",
+    "name": "south-african-actuarial-journal",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2020-01-29 02:31:48",
+    "href": "https://www.zotero.org/styles/south-african-actuarial-journal"
+  },
+  {
+    "title": "Springer - Humanities (author-date)",
+    "name": "springer-humanities-author-date",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "generic-base",
+        "humanities"
+      ]
+    },
+    "updated": "2019-10-01 00:21:45",
+    "href": "https://www.zotero.org/styles/springer-humanities-author-date"
+  },
+  {
+    "title": "Springer - Humanities (numeric, brackets)",
+    "name": "springer-humanities-brackets",
+    "dependent": 0,
+    "categories": {
+      "format": "numeric",
+      "fields": [
+        "generic-base",
+        "humanities"
+      ]
+    },
+    "updated": "2019-10-01 00:21:45",
+    "href": "https://www.zotero.org/styles/springer-humanities-brackets"
+  },
+  {
+    "title": "Springer - IMIS Series Migrationsgesellschaften",
+    "name": "springer-imis-series-migrationsgesellschaften",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2019-09-23 13:59:32",
+    "href": "https://www.zotero.org/styles/springer-imis-series-migrationsgesellschaften"
+  },
+  {
+    "title": "Studi e materiali di storia delle religioni (Italiano)",
+    "titleShort": "SMSR",
+    "name": "studi-e-materiali-di-storia-delle-religioni",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "theology",
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-14 05:16:25",
+    "href": "https://www.zotero.org/styles/studi-e-materiali-di-storia-delle-religioni"
+  },
+  {
+    "title": "Studi Slavistici Rivista dell\u2019Associazione Italiana degli Slavisti",
+    "name": "studi-slavistici-rivista-dellassociazione-italiana-degli-slavisti",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2022-03-11 02:22:02",
+    "href": "https://www.zotero.org/styles/studi-slavistici-rivista-dellassociazione-italiana-degli-slavisti"
+  },
+  {
+    "title": "Swiss Political Science Review",
+    "titleShort": "SPSR",
+    "name": "swiss-political-science-review",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities",
+        "social_science"
+      ]
+    },
+    "updated": "2019-05-12 01:08:27",
+    "href": "https://www.zotero.org/styles/swiss-political-science-review"
+  },
+  {
+    "title": "Tagungsberichte der Historischen Kommission f\u00fcr ost- und westpreu\u00dfische Landesforschung (Deutsch)",
+    "titleShort": "HiKo-OWP",
+    "name": "tagungsberichte-der-historischen-kommission-fur-ost-und-westpreussische-landesforschung",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities",
+        "literature"
+      ]
+    },
+    "updated": "2021-02-10 05:28:52",
+    "href": "https://www.zotero.org/styles/tagungsberichte-der-historischen-kommission-fur-ost-und-westpreussische-landesforschung"
+  },
+  {
+    "title": "Technische Universit\u00e4t Dresden - Historische Musikwissenschaft (note, Deutsch)",
+    "titleShort": "TUD Historische Musikwissenschaft (note, Deutsch)",
+    "name": "technische-universitat-dresden-historische-musikwissenschaft-note",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-10 05:28:52",
+    "href": "https://www.zotero.org/styles/technische-universitat-dresden-historische-musikwissenschaft-note"
+  },
+  {
+    "title": "Technische Universit\u00e4t Dresden - Kunstgeschichte (note, Deutsch)",
+    "titleShort": "TUD Kunstgeschichte (note, Deutsch)",
+    "name": "technische-universitat-dresden-kunstgeschichte-note",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-10 05:28:52",
+    "href": "https://www.zotero.org/styles/technische-universitat-dresden-kunstgeschichte-note"
+  },
+  {
+    "title": "Technische Universit\u00e4t Dresden - Medienwissenschaft und Neuere Deutsche Literatur (note, Deutsch)",
+    "titleShort": "TUD Germanistik (note, Deutsch)",
+    "name": "technische-universitat-dresden-medienwissenschaft-und-neuere-deutsche-literatur-note",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-10 05:28:52",
+    "href": "https://www.zotero.org/styles/technische-universitat-dresden-medienwissenschaft-und-neuere-deutsche-literatur-note"
+  },
+  {
+    "title": "Textual Practice",
+    "titleShort": "TextPrac",
+    "name": "textual-practice",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2019-02-23 04:46:32",
+    "href": "https://www.zotero.org/styles/textual-practice"
+  },
+  {
+    "title": "The American Journal of Bioethics",
+    "titleShort": "AJOB",
+    "name": "the-american-journal-of-bioethics",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2020-05-06 03:00:37",
+    "href": "https://www.zotero.org/styles/the-american-journal-of-bioethics"
+  },
+  {
+    "title": "The Depositional Record",
+    "name": "the-depositional-record",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2022-09-02 02:15:19",
+    "href": "https://www.zotero.org/styles/the-depositional-record"
+  },
+  {
+    "title": "The Journal of Hellenic Studies",
+    "name": "the-journal-of-hellenic-studies",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2022-08-16 21:03:04",
+    "href": "https://www.zotero.org/styles/the-journal-of-hellenic-studies"
+  },
+  {
+    "title": "The Journal of Juristic Papyrology",
+    "name": "the-journal-of-juristic-papyrology",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2015-01-01 23:37:43",
+    "href": "https://www.zotero.org/styles/the-journal-of-juristic-papyrology"
+  },
+  {
+    "title": "The Journal of Value Inquiry",
+    "name": "journal-of-value-inquiry",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities",
+        "philosophy"
+      ]
+    },
+    "updated": "2018-05-22 00:59:23",
+    "href": "https://www.zotero.org/styles/journal-of-value-inquiry"
+  },
+  {
+    "title": "Theory, Culture & Society",
+    "name": "theory-culture-and-society",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "social_science",
+        "humanities"
+      ]
+    },
+    "updated": "2018-05-22 00:59:23",
+    "href": "https://www.zotero.org/styles/theory-culture-and-society"
+  },
+  {
+    "title": "Trac\u00e9s: Revue de Sciences Humaines (Fran\u00e7ais)",
+    "name": "traces",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-12 04:50:30",
+    "href": "https://www.zotero.org/styles/traces"
+  },
+  {
+    "title": "Trames",
+    "name": "trames",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2023-03-30 14:06:45",
+    "href": "https://www.zotero.org/styles/trames"
+  },
+  {
+    "title": "Transversalit\u00e9s (Fran\u00e7ais)",
+    "name": "transversalites",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "theology",
+        "humanities",
+        "philosophy",
+        "literature",
+        "social_science"
+      ]
+    },
+    "updated": "2021-02-12 04:50:30",
+    "href": "https://www.zotero.org/styles/transversalites"
+  },
+  {
+    "title": "Twentieth-Century Music",
+    "name": "twentieth-century-music",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities",
+        "history"
+      ]
+    },
+    "updated": "2022-06-26 18:35:12",
+    "href": "https://www.zotero.org/styles/twentieth-century-music"
+  },
+  {
+    "title": "U Schy\u0142ku Staro\u017cytno\u015bci (Polski)",
+    "titleShort": "USS",
+    "name": "u-schylku-starozytnosci",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-14 05:16:25",
+    "href": "https://www.zotero.org/styles/u-schylku-starozytnosci"
+  },
+  {
+    "title": "Ul\u00faa. Revista de Historia, Sociedad y Cultura",
+    "name": "ulua-revista-de-historia-sociedad-y-cultura",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-06-04 03:24:16",
+    "href": "https://www.zotero.org/styles/ulua-revista-de-historia-sociedad-y-cultura"
+  },
+  {
+    "title": "Universidad Aut\u00f3noma de Ciudad Ju\u00e1rez - Estilo Latino Human\u00edstico",
+    "name": "universidad-autonoma-cidudad-juarez-estilo-latino-humanistico",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-09-07 01:27:40",
+    "href": "https://www.zotero.org/styles/universidad-autonoma-cidudad-juarez-estilo-latino-humanistico"
+  },
+  {
+    "title": "Universit\u00e0 Pontificia Salesiana",
+    "titleShort": "UPS",
+    "name": "universita-pontificia-salesiana",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "theology",
+        "humanities",
+        "philosophy",
+        "social_science"
+      ]
+    },
+    "updated": "2017-03-29 01:17:43",
+    "href": "https://www.zotero.org/styles/universita-pontificia-salesiana"
+  },
+  {
+    "title": "Universit\u00e0 Pontificia Salesiana (Italiano)",
+    "titleShort": "UPS-it",
+    "name": "universita-pontificia-salesiana-it",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "theology",
+        "humanities",
+        "philosophy",
+        "social_science"
+      ]
+    },
+    "updated": "2021-02-14 05:16:25",
+    "href": "https://www.zotero.org/styles/universita-pontificia-salesiana-it"
+  },
+  {
+    "title": "Universitas Gadjah Mada - Departemen Sejarah (Bahasa Indonesia)",
+    "titleShort": "UGM",
+    "name": "universitas-gadjah-mada-departemen-sejarah",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-14 05:16:25",
+    "href": "https://www.zotero.org/styles/universitas-gadjah-mada-departemen-sejarah"
+  },
+  {
+    "title": "Universit\u00e4t Basel - Iberoromanistik (Espa\u00f1ol)",
+    "name": "universitat-basel-iberoromanistik",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "linguistics",
+        "humanities"
+      ]
+    },
+    "updated": "2021-12-23 20:35:50",
+    "href": "https://www.zotero.org/styles/universitat-basel-iberoromanistik"
+  },
+  {
+    "title": "Universit\u00e4t Bern - Institut f\u00fcr Musikwissenschaft (note, Deutsch)",
+    "name": "universitat-bern-institut-fur-musikwissenschaft-note",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2022-06-01 09:22:47",
+    "href": "https://www.zotero.org/styles/universitat-bern-institut-fur-musikwissenschaft-note"
+  },
+  {
+    "title": "Universit\u00e4t Mannheim - Germanistische Linguistik (Deutsch)",
+    "name": "universitat-mannheim-germanistische-linguistik",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "linguistics",
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-10 05:28:52",
+    "href": "https://www.zotero.org/styles/universitat-mannheim-germanistische-linguistik"
+  },
+  {
+    "title": "Universit\u00e4t zu K\u00f6ln - Seminar f\u00fcr ABWL und Finanzierungslehre (Deutsch)",
+    "name": "universitat-zu-koln-seminar-fur-abwl-und-finanzierungslehre",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-08-31 01:56:40",
+    "href": "https://www.zotero.org/styles/universitat-zu-koln-seminar-fur-abwl-und-finanzierungslehre"
+  },
+  {
+    "title": "Universit\u00e9 de Gen\u00e8ve - D\u00e9partement de langue et de litt\u00e9rature fran\u00e7aises modernes (Fran\u00e7ais)",
+    "titleShort": "UNIGE-FRAMO",
+    "name": "universite-de-geneve-departement-de-langue-et-de-litterature-francaises-modernes",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities",
+        "literature"
+      ]
+    },
+    "updated": "2021-02-20 04:09:36",
+    "href": "https://www.zotero.org/styles/universite-de-geneve-departement-de-langue-et-de-litterature-francaises-modernes"
+  },
+  {
+    "title": "Universit\u00e9 de Montr\u00e9al - Facult\u00e9 de musique (Fran\u00e7ais - Canada)",
+    "titleShort": "Musique UdeM",
+    "name": "universite-de-montreal-faculte-de-musique",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-12 04:50:30",
+    "href": "https://www.zotero.org/styles/universite-de-montreal-faculte-de-musique"
+  },
+  {
+    "title": "Universit\u00e9 de Sherbrooke - Facult\u00e9 d'\u00e9ducation (Fran\u00e7ais - Canada)",
+    "name": "universite-de-sherbrooke-faculte-d-education",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities",
+        "generic-base"
+      ]
+    },
+    "updated": "2021-02-12 04:50:30",
+    "href": "https://www.zotero.org/styles/universite-de-sherbrooke-faculte-d-education"
+  },
+  {
+    "title": "Universit\u00e9 du Qu\u00e9bec \u00e0 Montr\u00e9al - \u00c9tudes litt\u00e9raires et s\u00e9miologie (Fran\u00e7ais - Canada)",
+    "titleShort": "UQAM - litterature",
+    "name": "universite-du-quebec-a-montreal-etudes-litteraires-et-semiologie",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities",
+        "literature"
+      ]
+    },
+    "updated": "2023-04-15 02:42:41",
+    "href": "https://www.zotero.org/styles/universite-du-quebec-a-montreal-etudes-litteraires-et-semiologie"
+  },
+  {
+    "title": "University for the Creative Arts (figures and illustrations)",
+    "titleShort": "uca-illustrations",
+    "name": "university-for-the-creative-arts-figures",
+    "dependent": 0,
+    "categories": {
+      "format": "numeric",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2018-07-01 17:26:23",
+    "href": "https://www.zotero.org/styles/university-for-the-creative-arts-figures"
+  },
+  {
+    "title": "University of Bologna - Liberal Arts College (Universit\u00e0 di Bologna - Facolt\u00e0 di Lettere e Filosofia) (Italiano)",
+    "name": "universita-di-bologna-lettere",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities",
+        "linguistics",
+        "philosophy"
+      ]
+    },
+    "updated": "2021-02-14 05:16:25",
+    "href": "https://www.zotero.org/styles/universita-di-bologna-lettere"
+  },
+  {
+    "title": "University of New England, Australia (note)",
+    "name": "university-of-new-england-australia-note",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities",
+        "history"
+      ]
+    },
+    "updated": "2015-12-16 02:32:01",
+    "href": "https://www.zotero.org/styles/university-of-new-england-australia-note"
+  },
+  {
+    "title": "Vita Latina (auteurs anciens, Fran\u00e7ais)",
+    "titleShort": "VL (text. anc.)",
+    "name": "vita-latina-auteurs-anciens",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-12 04:50:30",
+    "href": "https://www.zotero.org/styles/vita-latina-auteurs-anciens"
+  },
+  {
+    "title": "Vita Latina (Fran\u00e7ais)",
+    "titleShort": "VL",
+    "name": "vita-latina",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-12 04:50:30",
+    "href": "https://www.zotero.org/styles/vita-latina"
+  },
+  {
+    "title": "Wiesbaden Business School",
+    "name": "wiesbaden-business-school",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2019-08-29 03:37:55",
+    "href": "https://www.zotero.org/styles/wiesbaden-business-school"
+  },
+  {
+    "title": "Zeitgeschichte (Deutsch)",
+    "titleShort": "Zeitgeschichte",
+    "name": "zeitgeschichte",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-10 05:28:52",
+    "href": "https://www.zotero.org/styles/zeitgeschichte"
+  },
+  {
+    "title": "Zeitschrift f\u00fcr deutsche Philologie (Deutsch)",
+    "titleShort": "ZfdPh",
+    "name": "zeitschrift-fur-deutsche-philologie",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities",
+        "literature"
+      ]
+    },
+    "updated": "2022-12-17 13:06:29",
+    "href": "https://www.zotero.org/styles/zeitschrift-fur-deutsche-philologie"
+  },
+  {
+    "title": "Zeitschrift f\u00fcr digitale Geisteswissenschaften (Deutsch)",
+    "titleShort": "ZfdG",
+    "name": "zeitschrift-fur-digitale-geisteswissenschaften",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-10 05:28:52",
+    "href": "https://www.zotero.org/styles/zeitschrift-fur-digitale-geisteswissenschaften"
+  },
+  {
+    "title": "Zeitschrift f\u00fcr Geschichtsdidaktik (Deutsch)",
+    "titleShort": "ZfGD",
+    "name": "zeitschrift-fur-geschichtsdidaktik",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "history",
+        "humanities"
+      ]
+    },
+    "updated": "2023-03-17 13:24:07",
+    "href": "https://www.zotero.org/styles/zeitschrift-fur-geschichtsdidaktik"
+  },
+  {
+    "title": "Zeitschrift f\u00fcr Kunstgeschichte",
+    "titleShort": "ZfK",
+    "name": "zeitschrift-fur-kunstgeschichte",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities",
+        "history"
+      ]
+    },
+    "updated": "2016-12-05 05:12:46",
+    "href": "https://www.zotero.org/styles/zeitschrift-fur-kunstgeschichte"
+  },
+  {
+    "title": "Zeitschrift f\u00fcr Medien- und Kulturforschung (Deutsch)",
+    "titleShort": "ZMK",
+    "name": "zeitschrift-fur-medien-und-kulturforschung",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-10 05:28:52",
+    "href": "https://www.zotero.org/styles/zeitschrift-fur-medien-und-kulturforschung"
+  },
+  {
+    "title": "Zeitschrift f\u00fcr Medienwissenschaft (Deutsch)",
+    "titleShort": "ZfM",
+    "name": "zeitschrift-fur-medienwissenschaft",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-10 05:28:52",
+    "href": "https://www.zotero.org/styles/zeitschrift-fur-medienwissenschaft"
+  },
+  {
+    "title": "Zeitschrift f\u00fcr Ostmitteleuropa-Forschung (Deutsch)",
+    "titleShort": "ZfO",
+    "name": "zeitschrift-fur-ostmitteleuropa-forschung",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "history",
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-10 05:28:52",
+    "href": "https://www.zotero.org/styles/zeitschrift-fur-ostmitteleuropa-forschung"
+  },
+  {
+    "title": "Zeitschrift f\u00fcr Qualitative Forschung (Deutsch)",
+    "titleShort": "ZQF",
+    "name": "zeitschrift-fur-qualitative-forschung",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "social_science",
+        "humanities"
+      ]
+    },
+    "updated": "2021-02-10 05:28:52",
+    "href": "https://www.zotero.org/styles/zeitschrift-fur-qualitative-forschung"
+  },
+  {
+    "title": "Zeitschrift f\u00fcr Religionswissenschaft (author-date)",
+    "titleShort": "ZfR (author-date)",
+    "name": "zeitschrift-fur-religionswissenschaft-author-date",
+    "dependent": 0,
+    "categories": {
+      "format": "author-date",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2016-02-25 04:55:40",
+    "href": "https://www.zotero.org/styles/zeitschrift-fur-religionswissenschaft-author-date"
+  },
+  {
+    "title": "Zeitschrift f\u00fcr Religionswissenschaft (note)",
+    "titleShort": "ZfR (note)",
+    "name": "zeitschrift-fur-religionswissenschaft-note",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2018-05-22 00:59:23",
+    "href": "https://www.zotero.org/styles/zeitschrift-fur-religionswissenschaft-note"
+  },
+  {
+    "title": "Zwitscher-Maschine",
+    "name": "zwitscher-maschine",
+    "dependent": 0,
+    "categories": {
+      "format": "note",
+      "fields": [
+        "humanities"
+      ]
+    },
+    "updated": "2017-03-29 04:22:37",
+    "href": "https://www.zotero.org/styles/zwitscher-maschine"
+  }
+]

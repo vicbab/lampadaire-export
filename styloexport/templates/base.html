@@ -1,0 +1,37 @@
+<!doctype html><!-- This is a valid HTML5 document. -->
+<!-- Screen readers, SEO, extensions and so on. -->
+<html lang="fr">
+<head>
+  <!-- Has to be within the first 1024 bytes, hence before the `title` element
+    See: https://www.w3.org/TR/2012/CR-html5-20121217/document-metadata.html#charset -->
+  <meta charset="utf-8">
+  <!-- Why no `X-UA-Compatible` meta: https://stackoverflow.com/a/6771584 -->
+  <!-- The viewport meta is quite crowded and we are responsible for that.
+    See: https://codepen.io/tigt/post/meta-viewport-for-2015 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Required to make a valid HTML5 document. -->
+  <title>Stylo export</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='vendors/css/nord.0.2.0.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='vendors/css/simple.2.0.2.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/colors.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/fonts.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/forms.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/errors.css') }}">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  {% block extra_head %}{% endblock extra_head %}
+</head>
+<body>
+  <header>
+  {% block header %}
+    <h1><a href="/" title="Retourner à l’accueil">Stylo export</a></h1>
+  {% endblock header %}
+  </header>
+  <main>
+  {% block main %}
+
+  {% endblock main %}
+  </main>
+  {% block extra_body %}{% endblock extra_body %}
+</body>
+</html>

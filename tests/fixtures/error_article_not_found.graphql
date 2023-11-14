@@ -1,0 +1,26 @@
+{
+  "errors": [
+    {
+      "message": "Unable to find article with id 60db23ed66d232001371ac07",
+      "locations": [
+        {
+          "line": 3,
+          "column": 21
+        }
+      ],
+      "path": [
+        "article"
+      ],
+      "extensions": {
+        "date": "2023-01-06T19:23:21.362Z",
+        "type": "NOT_FOUND",
+        "errors": [
+          "Unable to find article with id 60db23ed66d232001371ac07"
+        ]
+      }
+    }
+  ],
+  "data": {
+    "article": "None"
+  }
+}

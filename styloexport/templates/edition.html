@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <form
+        method="POST"
+        action="{{ url_for('views.edition', edition=edition) }}"
+        {% if form.errors %}class="errors"{% endif %}
+    >
+        {{ form.csrf_token }}
+        {{ form.name.label }} :<br />
+        {{ form.name }}
+        {% if form.name.errors %}
+            <dl>
+            {% for error in form.name.errors %}
+                <dt>Erreur :</dt>
+                <dd>{{ error|safe }}</dd>
+            {% endfor %}
+            </dl>
+        {% endif %}
+        <br />
+        {{ form.kind.label }} :<br />
+        {{ form.kind }}
+        {% if form.kind.errors %}
+            <dl>
+            {% for error in form.kind.errors %}
+                <dt>Erreur :</dt>
+                <dd>{{ error|safe }}</dd>
+            {% endfor %}
+            </dl>
+        {% endif %}
+        <br />
+        {{ form.domain.label }} :<br />
+        {{ form.domain }}
+        {% if form.domain.errors %}
+            <dl>
+            {% for error in form.domain.errors %}
+                <dt>Erreur :</dt>
+                <dd>{{ error|safe }}</dd>
+            {% endfor %}
+            </dl>
+        {% endif %}
+        <br />
+        {{ form.article_id.label }} :<br />
+        {{ form.article_id }}
+        <p style="margin-top: 0;"><small>Par exemple <code>5e32d54e4f58270018f9d251</code></small></p>
+        {% if form.article_id.errors %}
+            <dl>
+            {% for error in form.article_id.errors %}
+                <dt>Erreur :</dt>
+                <dd>{{ error|safe }}</dd>
+            {% endfor %}
+            </dl>
+        {% endif %}
+        {{ form.with_toc }} {{ form.with_toc.label }}<br />
+        {{ form.with_ascii }} {{ form.with_ascii.label }}
+        <input type="submit" value="Récupérer">
+    </form>
+{% endblock main %}

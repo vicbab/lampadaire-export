@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr">
+<teiHeader>
+  <fileDesc>
+    <titleStmt>
+      <title>Stylo</title>
+    </titleStmt>
+    <publicationStmt>
+      <date>2018/05/29</date>
+    </publicationStmt>
+    <sourceDesc>
+      <p>Produced by pandoc.</p>
+    </sourceDesc>
+  </fileDesc>
+
+<xenoData>
+<stylo-metadata xmlns="http://stylo.huma-num.fr/ns/1.0">
+<title_f>Stylo</title_f>
+
+<title>Stylo</title>
+
+<subtitle_f>Un article type</subtitle_f>
+
+<subtitle>Un article type</subtitle>
+
+<authors>
+  <author>
+    <foaf></foaf>
+    <forname>Marcello</forname>
+    <isni></isni>
+    <orcid>0000-0001-6424-3229</orcid>
+    <surname>Vitali-Rosati</surname>
+    <viaf></viaf>
+    <wikidata></wikidata>
+  </author>
+  <author>
+    <foaf></foaf>
+    <forname>Nicolas</forname>
+    <isni></isni>
+    <orcid>0000-0001-7516-3427</orcid>
+    <surname>Sauret</surname>
+    <viaf></viaf>
+    <wikidata></wikidata>
+  </author>
+</authors>
+
+<date>2018/05/29</date>
+
+<year>2018</year>
+
+<month>05</month>
+
+<day>29</day>
+
+<abstracts>
+  <abstract>
+    <lang>fr</lang>
+    <text>C’est article est un exemple d’article type édité sur Stylo.
+Stylo est un éditeur d’article scientifique dédié aux sciences humaines.
+Vous pouvez éditer cet article pour vous entraîner. Une documentation
+plus complète est accessible en cliquant sur le lien
+documentation.</text>
+    <text_f>C’est article est un exemple d’article type édité sur
+<hi rendition="simple:italic">Stylo</hi>.
+<hi rendition="simple:italic">Stylo</hi> est un éditeur d’article
+scientifique dédié aux sciences humaines. Vous pouvez éditer cet article
+pour vous entraîner. Une documentation plus complète est accessible en
+cliquant sur le lien documentation.</text_f>
+  </abstract>
+</abstracts>
+
+<kwLists>
+  <kwList>
+    <lang>fr</lang>
+    <list>édition, bac-à-sable</list>
+    <list_f>édition, bac-à-sable</list_f>
+  </kwList>
+  <kwList>
+    <lang>en</lang>
+    <list>publishing, sandbox</list>
+    <list_f>publishing, sandbox</list_f>
+  </kwList>
+</kwLists>
+
+<controlledKeywords>
+  <controlledKeyword>
+    <idRameau>FRBNF13318593</idRameau>
+    <label>Édition</label>
+    <uriRameau>http://catalogue.bnf.fr/ark:/12148/cb13318593f</uriRameau>
+  </controlledKeyword>
+</controlledKeywords>
+
+<lang>fr</lang>
+
+
+
+<typeArticle>Essai</typeArticle>
+
+
+
+
+
+
+
+
+<dossiers>
+</dossiers>
+
+<link-citations>true</link-citations>
+
+<nocite>*</nocite>
+
+<directors>
+</directors>
+
+<translators>
+</translators>
+
+<translations>
+</translations>
+
+<articleslies>
+</articleslies>
+
+</stylo-metadata>
+</xenoData>
+</teiHeader>
+<text>
+<body>
+<div type="level1" xml:id="introduction">
+  <head>Introduction</head>
+  <p>Stylo est un éditeur de texte scientifique. Pour faire vos premiers
+  pas sur Stylo, commencez par éditer cet article.</p>
+  <p>Stylo utilise le format <hi rendition="simple:italic">markdown</hi>
+  pour baliser et styler le texte. Cet article présente la syntaxe de
+  base du markdown, et une documentation plus complète
+  <ref target="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">est
+  accessible ici</ref>.</p>
+  <p>Vous pouvez visualiser l’article à tout moment en cliquant sur le
+  bouton <hi rendition="simple:bold">Preview</hi> dans le menu de
+  gauche.</p>
+</div>
+<div type="level1" xml:id="les-titres">
+  <head>Les titres</head>
+  <p>Les titres de niveaux 2 doivent être balisés avec 2
+  <seg type="code">#</seg> (<seg type="code">##</seg>) et non un seul,
+  car le titre de niveau 1 correspond au titre de l’article, déclaré
+  dans les métadonnées.</p>
+  <div type="level2" xml:id="titres-de-niveau-3">
+    <head>Titres de niveau 3</head>
+    <p>Les titres de niveaux 3 doivent être balisés avec 3
+    <seg type="code">#</seg> et ainsi de suite.</p>
+    <p>Un saut de ligne correspond au début d’un nouveau paragraphe.</p>
+  </div>
+</div>
+<div type="level1" xml:id="syntaxe-minimale">
+  <head>Syntaxe minimale</head>
+  <div type="level2" xml:id="gras-et-italique">
+    <head>Gras et italique</head>
+    <p>Voici du texte en <hi rendition="simple:italic">italique</hi>.
+    Voici du texte en <hi rendition="simple:bold">gras</hi>.</p>
+  </div>
+  <div type="level2" xml:id="commentaire">
+    <head>Commentaire</head>
+    <p>La ligne ci-dessous n’apparaitra pas dans le document final.</p>
+  </div>
+  <div type="level2" xml:id="images">
+    <head>Images</head>
+    <p>On peut insérer des images:</p>
+    <p><figure>
+      <head>Titre de mon image</head>
+      <graphic url="https://avatars2.githubusercontent.com/u/16691667?s=200&amp;v=4" />
+      <figDesc>fig:</figDesc>
+    </figure></p>
+    <p>Notez que le «Titre de mon image» sera pris en compte comme
+    légende de l’image dans l’article.</p>
+  </div>
+  <div type="level2" xml:id="listes">
+    <head>Listes</head>
+    <p>Les listes non numérotées:</p>
+    <list type="unordered">
+      <item>
+        <p>item</p>
+      </item>
+      <item>
+        <p>item</p>
+      </item>
+      <item>
+        <p>item</p>
+      </item>
+    </list>
+    <p>Les listes numérotées:</p>
+    <list type="ordered:arabic">
+      <item>
+        <p>item</p>
+      </item>
+      <item>
+        <p>item</p>
+      </item>
+      <item>
+        <p>item</p>
+      </item>
+    </list>
+    <p>L’ordre des chiffres n’est pas important:</p>
+    <list type="ordered:arabic">
+      <item>
+        <p>item</p>
+      </item>
+      <item>
+        <p>item</p>
+      </item>
+      <item>
+        <p>item</p>
+      </item>
+      <item>
+        <p>item</p>
+      </item>
+    </list>
+    <p>Cette liste sera automatiquement ordonnée de 1 à 4.</p>
+  </div>
+</div>
+<div type="level1" xml:id="appareil-critique">
+  <head>Appareil critique</head>
+  <div type="level2" xml:id="notes-de-bas-de-page">
+    <head>Notes de bas de page</head>
+    <p>Un appel de note de bas de page se fait ainsi<note>
+      <p>La note se trouve ensuite à la fin du texte.</p>
+    </note>. Par ailleurs, la note peut être déclarée n’importe où dans
+    le document<note>
+      <p>Voici une note déclarée en fin de document</p>
+    </note>, en fin de document ou juste en dessous par exemple<note>
+      <p>Une note déclarée <quote>n’importe où</quote>, ici, juste en
+      dessous du paragraphe correspondant.</p>
+    </note>.</p>
+    <p>Le label de la note peut être ce que vous voulez : il peut être
+    indifféremment un chiffre ou une suite de caractères<note>
+      <p>Voici une note avec un label textuel.</p>
+    </note>.</p>
+    <p>Une note de bas de page peut aussi être écrite dans le corps du
+    texte, en sortant l’accent circonflexe des crochets<note>
+      <p>Ceci est une note de bas de page inline. Elle peut être aussi
+      longue que vous voulez, elle sera transformée comme les autres en
+      note de bas de page</p>
+    </note>.</p>
+  </div>
+  <div type="level2" xml:id="les-références">
+    <head>Les références</head>
+    <p>Un article scientifique utilise des références. Vous pouvez soit
+    importer un fichier
+    <ref target="http://www.bib.umontreal.ca/lgb/BibTeX/default.htm">bibtex</ref>
+    généré par votre logiciel de gestion bibliographique (conseillé), ou
+    bien créer manuellement les références au format bibtex.</p>
+    <p>Les références sont ensuite insérées dans le texte grâce à leur
+    <hi rendition="simple:italic">clé bibtex</hi>. Pour récupérer la clé
+    bibtex d’une référence, il suffit de cliquer sur la référence
+    souhaitée dans la liste des référence ci-contre. La clé est alors
+    ajouté à votre presse-papier, il suffit ensuite de la coller dans le
+    texte (<ref target="#ref-goody_raison_1979">Goody 1979</ref>).</p>
+    <p>Pour résumer :</p>
+    <list type="ordered:arabic">
+      <item>
+        <p>clic sur la référence: copier la clé</p>
+      </item>
+      <item>
+        <p>coller ou CTRL+V : colle la clé dans le texte où est
+        positionné le curseur
+        (<ref target="#ref-goody_raison_1979">Goody 1979</ref>).</p>
+      </item>
+    </list>
+    <p>Il est également possible d’ajouter une référence ainsi : « Comme
+    le dit Goody (<ref target="#ref-goody_raison_1979">1979</ref>), le
+    geste … »</p>
+    <p>La clé peut aussi être accompagnée de précision comme ici
+    (<ref target="#ref-goody_raison_1979">Goody 1979, pp.115</ref>).</p>
+    <p>Les références citées se retrouveront ensuite à la fin du texte
+    dans la section <seg type="code">## Bibliographie</seg></p>
+  </div>
+  <div type="level2" xml:id="les-citations">
+    <head>Les citations</head>
+    <p>Une citation dans le corps du texte est indiquée par guillemets «
+    Stat rosa pristina nomine, nomina nuda tenemus ». Une citation plus
+    longue peut être indiquée ainsi :</p>
+    <quote>
+      <p>Stat rosa pristina nomine, nomina nuda tenemus.</p>
+      <p>la citation se poursuit avec un second paragraphe.</p>
+    </quote>
+  </div>
+</div>
+<div type="level1" xml:id="versions-et-export">
+  <head>Versions et export</head>
+  <div type="level2" xml:id="métadonnées">
+    <head>Métadonnées</head>
+    <p>Les métadonnées de l’article s’éditent dans le menu en haut à
+    droite. Vous pouvez y indiquer le titre, sous-titre, le nom de
+    l’auteur et son identifiant de l’Orcid<note>
+      <p>L’identifiant Orcid permettra de récupérer automatiquement
+      l’affiliation et la biographie de l’auteur.</p>
+    </note>, le résumé et les mot-clés de l’article. Pour les éditeurs
+    de revue, une série plus complète de métadonnées est également
+    disponible.</p>
+  </div>
+  <div type="level2" xml:id="preview-et-annotation">
+    <head>Preview et annotation</head>
+    <p>Chaque version de votre texte peut être prévisualisée et annotée
+    avec l’outil d’annotation Hypothes.is. Pour accéder à la preview,
+    cliquez sur le bouton <hi rendition="simple:bold">Preview</hi>. Pour
+    accéder à la version html annotable, cliquez sur le bouton
+    <hi rendition="simple:bold">Anotate</hi>. Vous pouvez alors partager
+    ces urls de preview et d’annotation. Chaque url est relative à la
+    version du document.</p>
+  </div>
+  <div type="level2" xml:id="export">
+    <head>Export</head>
+    <p>Plusieurs types d’exports sont disponibles :</p>
+    <list type="unordered">
+      <item>
+        <p>XML Erudit : exporte un fichier xml compatible avec le schéma
+        Erudit</p>
+      </item>
+      <item>
+        <p>Zip : comprend les trois sources de l’article : yaml
+        (métadonnées), bibtex (bibliographie), md (corps de texte)</p>
+      </item>
+      <item>
+        <p>…</p>
+      </item>
+    </list>
+  </div>
+</div>
+<div type="level1" xml:id="annotations-sémantiques">
+  <head>Annotations sémantiques</head>
+  <p>Il est possible de structurer sémantiquement votre texte avec des
+  simples balises.</p>
+  <p>Il y a deux types d’annotation sémantiques:</p>
+  <list type="ordered:arabic">
+    <item>
+      <p>Des annotations qui concernent un ou plusieurs mots dans le
+      même paragraphe</p>
+    </item>
+    <item>
+      <p>Des annotations qui concernent plusieurs paragraphes</p>
+    </item>
+  </list>
+  <div type="level2" xml:id="annotation-dans-un-paragraphe">
+    <head>Annotation dans un paragraphe</head>
+    <p>La syntaxe:</p>
+    <p>Voici la thèse de l’article</p>
+    <p>Produira en HTML:</p>
+    <p>Voici la thèse de l’article</p>
+    <p>Dans la preview vous pouvez visualiser les classes:</p>
+    <list type="unordered">
+      <item>
+        <p>these</p>
+      </item>
+      <item>
+        <p>definition</p>
+      </item>
+      <item>
+        <p>exemple</p>
+      </item>
+      <item>
+        <p>concept</p>
+      </item>
+      <item>
+        <p>epigraphe</p>
+      </item>
+      <item>
+        <p>dedicace</p>
+      </item>
+      <item>
+        <p>note</p>
+      </item>
+    </list>
+  </div>
+  <div type="level2" xml:id="annotation-de-plusieurs-paragraphes">
+    <head>Annotation de plusieurs paragraphes</head>
+    <p>La syntaxe:</p>
+    <p>Ici un paragraphe.</p>
+    <p>Ici un autre paragraphe.</p>
+    <p>Produira en HTML:</p>
+    <ab type='codeblock html'>
+
+&lt;div class=&quot;maclasse&quot;&gt;
+  &lt;p&gt;Ici un paragraphe.&lt;/p&gt;
+  &lt;p&gt;Ici un autre paragraphe.&lt;/p&gt;
+&lt;/div&gt;
+</ab>
+    <p>Pour plus d’informations, consultez la documentation.</p>
+  </div>
+</div>
+<div type="level1" xml:id="bibliographie">
+  <head>Bibliographie</head>
+  <p xml:id="ref-goody_raison_1979">Goody, Jack. 1979.
+  <hi rendition="simple:italic">La Raison graphique. La domestication de
+  la pensée sauvage.</hi> Le sens commun. Les Editions de Minuit.</p>
+</div>
+</body>
+</text>
+</TEI>

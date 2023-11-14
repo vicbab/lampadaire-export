@@ -1,0 +1,57 @@
+---
+abstract:
+  - lang: fr
+    text: >-
+      C'est article est un exemple d'article type édité sur Stylo. Stylo est un
+      éditeur d'article scientifique dédié aux sciences humaines.
+
+      Vous pouvez éditer cet article pour vous entraîner. Une documentation plus
+      complète est accessible en cliquant sur le lien documentation.
+    text_f: >-
+      C'est article est un exemple d'article type édité sur _Stylo_. _Stylo_ est
+      un éditeur d'article scientifique dédié aux sciences humaines. 
+
+      Vous pouvez éditer cet article pour vous entraîner. Une documentation plus
+      complète est accessible en cliquant sur le lien documentation.
+authors:
+  - foaf: ''
+    forname: Marcello
+    isni: ''
+    orcid: 0000-0001-6424-3229
+    surname: Vitali-Rosati
+    viaf: ''
+    wikidata: ''
+  - foaf: ''
+    forname: Nicolas
+    isni: ''
+    orcid: 0000-0001-7516-3427
+    surname: Sauret
+    viaf: ''
+    wikidata: ''
+bibliography: How_to_Stylo-latest.bib
+controlledKeywords:
+  - idRameau: FRBNF13318593
+    label: Édition
+    uriRameau: http://catalogue.bnf.fr/ark:/12148/cb13318593f
+date: 2018/05/29
+day: '29'
+id_sp: SP1234
+keywords:
+  - lang: fr
+    list: édition, bac-à-sable
+    list_f: édition, bac-à-sable
+  - lang: en
+    list: publishing, sandbox
+    list_f: publishing, sandbox
+lang: fr
+link-citations: true
+month: '05'
+subtitle: Un article type
+subtitle_f: Un article type
+title: Stylo
+title_f: Stylo
+typeArticle:
+  - Essai
+year: '2018'
+nocite: '*'
+---
