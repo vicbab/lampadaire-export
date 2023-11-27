@@ -492,6 +492,7 @@ class Article:
                 export_file_path = self.download_dir / export_file_name
                 images_file_path = self.download_dir / "images.zip"
                 template_file_path = templates_folder / "templateLaTeX.latex"
+                print("calling pandoc API")
                 response = pandocapi.pdf(
                     export_file_name,
                     images_file_path,
@@ -500,6 +501,8 @@ class Article:
                     with_toc,
                     style_name,
                 )
+                print(archive)
+                print(response)
                 export_file_path.write_bytes(response.content)
                 self._write_to_archive(archive, export_file_path)
             if "odt" in formats:

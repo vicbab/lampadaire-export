@@ -32,8 +32,8 @@
       <term name="at">disponible sur&#160;:</term>
       <term name="et-al">et al.</term>
       <term name="ibid" form="short">ibid</term>
-      <term name="issue" form="short">nᵒ</term>
-      <term name="collection-number" form="short">nᵒ</term>
+      <term name="issue" form="short">no</term>
+      <term name="collection-number" form="short">no</term>
       <term name="chapter-number" form="short">chap.</term>
     </terms>
   </locale>
@@ -252,7 +252,7 @@
       <else>
         <group delimiter=", " prefix="coll. ">
           <text variable="collection-title" text-case="capitalize-first" quotes="true"/>
-          <text variable="collection-number" prefix="nᵒ "/>
+          <text variable="collection-number" prefix="no "/>
         </group>
       </else>
     </choose>

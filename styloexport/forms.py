@@ -92,6 +92,7 @@ class ExportGeneriqueForm(ExportForm):
 
 
 class ExportRevueForm(ExportForm):
+    bibliography_style = SelectField(label="Feuille de styles bibliographiques")
     formats = SelectField(label="Format de votre export")
 
     class Meta:

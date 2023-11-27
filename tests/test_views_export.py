@@ -379,6 +379,57 @@ def test_export_generique_html_only(app, client, context, httpx_mock, tmp_path):
     filename = "test-5e32d54e4f58270018f9d251--html-toc-0-ascii-0.zip"
     assert response.headers["Content-Disposition"] == f"attachment; filename={filename}"
 
+def test_export_lampadaire_pdf(app, client, context, httpx_mock, tmp_path):
+    httpx_mock.add_response(
+        url="https://stylo.huma-num.fr/graphql",
+        content=(Path() / "tests" / "fixtures" / "How_to_Stylo.graphql").read_text(),
+    )
+    httpx_mock.add_response(
+        url="https://avatars2.githubusercontent.com/u/16691667?s=200&v=4",
+        content=(
+            Path() / "tests" / "fixtures" / "7dc926ed4014a96a908e5fb21de52329"
+        ).read_bytes(),
+        headers={"content-type": "image/png"},
+    )
+    httpx_mock.add_response(
+        url=(
+            f"{SE_PANDOC_API_BASE_URL}convert/html/"
+            "?name=test.html&with_toc=false&with_ascii=false"
+        ),
+        content=(Path() / "tests" / "fixtures" / "How_to_Stylo.html").read_bytes(),
+    )
+    httpx_mock.add_response(
+        url=f"{SE_PANDOC_API_BASE_URL}convert/xml/tei/?name=test-tei.xml",
+        content=(Path() / "tests" / "fixtures" / "How_to_Stylo-tei.xml").read_bytes(),
+    )
+    httpx_mock.add_response(
+        url=f"{SE_PANDOC_API_BASE_URL}convert/xml/erudit/?name=test-erudit.xml",
+        content=(
+            Path() / "tests" / "fixtures" / "How_to_Stylo-erudit.xml"
+        ).read_bytes(),
+    )
+    httpx_mock.add_response(
+        url=(f"{SE_PANDOC_API_BASE_URL}convert/tex/?name=test.tex&with_toc=false"),
+        content=(Path() / "tests" / "fixtures" / "How_to_Stylo.tex").read_bytes(),
+    )
+    httpx_mock.add_response(
+        url=f"{SE_PANDOC_API_BASE_URL}convert/pdf/?name=test.pdf&with_toc=false",
+        content=(Path() / "tests" / "fixtures" / "How_to_Stylo.pdf").read_bytes(),
+    )
+
+    formats = "formats=pdf"
+    response = client.get(
+        (
+            f"/lampadaire/export/stylo.huma-num.fr/5e32d54e4f58270018f9d251/test/"
+            f"?{formats}&bibliography_style=chicagomodified&version="
+        )
+    )
+
+    assert response.status_code == HTTPStatus.OK
+    formats = "pdf"
+    filename = f"test-5e32d54e4f58270018f9d251--{formats}-toc-0-ascii-0.zip"
+    assert response.headers["Content-Disposition"] == f"attachment; filename={filename}"
+
 
 def test_export_sens_public_all(app, client, context, httpx_mock, tmp_path):
     httpx_mock.add_response(

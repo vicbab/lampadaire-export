@@ -230,6 +230,7 @@ def article(edition: str, domain: str, article_id: str, article_slug: str) -> st
     "/<edition>/export/<domain>/<article_id>/<article_slug>/", methods=("GET",)
 )
 def export(edition: str, domain: str, article_id: str, article_slug: str) -> Any:
+    print("exporting: " + edition + " " + domain + " " + article_id + " " + article_slug)
     force_download = bool(request.args.get("force_download", False))
     editions = current_app.config["SE_EDITIONS"]
     edition_configuration = editions[edition]
@@ -283,6 +284,7 @@ def downloads(
     download_file_path = (
         download_dir / edition / domain / f"{article_slug}-{article_id}" / filename
     )
+    print(download_file_path)
     if not download_file_path.exists():
         return abort(404)
 

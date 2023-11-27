@@ -2,7 +2,7 @@ from pathlib import Path
 
 SECRET_KEY = "TODO"
 
-SE_PANDOC_API_BASE_URL = "http://127.0.0.1:8000/latest/"
+SE_PANDOC_API_BASE_URL = "http://127.0.0.1:8000/v20221126_219/"
 SE_PANDOC_API_TIMEOUT = None
 SE_STYLO_API_TIMEOUT = None
 SE_IMAGES_TIMEOUT = 60
@@ -44,6 +44,18 @@ SE_EDITIONS = {
                     "pdf",
                     "xml-tei",
                     "xml-erudit",
+                ],
+            }
+        },
+        "images_path": "media",
+    },
+    "lampadaire": {
+        "name": "Lampadaire",
+        "exports": {
+            "all": {
+                "name": "pdf",
+                "formats": [
+                    "pdf",
                 ],
             }
         },

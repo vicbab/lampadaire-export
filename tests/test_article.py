@@ -993,6 +993,74 @@ def test_article_generique_only_html(app, httpx_mock, tmp_path, mocker):
     assert export_file_path.exists()
     assert zipfile_write.call_count == 6  # md + bib + yaml + images + html
 
+def test_article_lampadaire_pdf(app, httpx_mock, tmp_path, mocker):
+    httpx_mock.add_response(
+        url="https://stylo.huma-num.fr/graphql",
+        content=(Path() / "tests" / "fixtures" / "How_to_Stylo.graphql").read_text(),
+    )
+    httpx_mock.add_response(
+        url="https://avatars2.githubusercontent.com/u/16691667?s=200&v=4",
+        content=(
+            Path() / "tests" / "fixtures" / "7dc926ed4014a96a908e5fb21de52329"
+        ).read_bytes(),
+        headers={"content-type": "image/png"},
+    )
+    httpx_mock.add_response(
+        url=(
+            f"{SE_PANDOC_API_BASE_URL}convert/html/"
+            "?name=test.html&with_toc=false&with_ascii=false"
+        ),
+        content=(Path() / "tests" / "fixtures" / "How_to_Stylo.html").read_bytes(),
+    )
+    httpx_mock.add_response(
+        url=f"{SE_PANDOC_API_BASE_URL}convert/xml/tei/?name=test-tei.xml",
+        content=(Path() / "tests" / "fixtures" / "How_to_Stylo-tei.xml").read_bytes(),
+    )
+    httpx_mock.add_response(
+        url=f"{SE_PANDOC_API_BASE_URL}convert/xml/erudit/?name=test-erudit.xml",
+        content=(
+            Path() / "tests" / "fixtures" / "How_to_Stylo-erudit.xml"
+        ).read_bytes(),
+    )
+    httpx_mock.add_response(
+        url=(f"{SE_PANDOC_API_BASE_URL}convert/tex/?name=test.tex&with_toc=false"),
+        content=(Path() / "tests" / "fixtures" / "How_to_Stylo.tex").read_bytes(),
+    )
+    httpx_mock.add_response(
+        url=f"{SE_PANDOC_API_BASE_URL}convert/pdf/?name=test.pdf&with_toc=false",
+        content=(Path() / "tests" / "fixtures" / "How_to_Stylo.pdf").read_bytes(),
+    )
+    zipfile_write = mocker.patch("styloexport.article.ZipFile.write")
+    zipfile_write.return_value = "dummy"
+
+    article = Article(
+        "lampadaire",
+        SE_EDITIONS["lampadaire"],
+        "stylo.huma-num.fr",
+        "5e32d54e4f58270018f9d251",
+        "test",
+        "",
+        tmp_path,
+        ["lampadaire"],
+        ["https://stylo.huma-num.fr"],
+        [".png"],
+    )
+    templates_folder = (Path() / "templates" / "lampadaire").resolve()
+    article.fetch_all(templates_folder)
+    export_file_path = article.export(
+        "",
+        [
+            "pdf",
+        ],
+        "chicagomodified",
+        templates_folder,
+    )
+
+    assert export_file_path.exists()
+    # one image + twice two images from templates (crochets + logo sens-public)
+    # + md + bib + yaml + html
+    # + pdf + tex + xml-tei + xml-erudit
+    assert zipfile_write.call_count == 5
 
 def test_article_sens_public_all_export(app, httpx_mock, tmp_path, mocker):
     httpx_mock.add_response(

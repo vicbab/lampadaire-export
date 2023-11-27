@@ -30,8 +30,8 @@
       <term name="accessed">consulté le</term>
       <term name="et-al">et al.</term>
       <term name="ibid" form="short">ibid</term>
-      <term name="issue" form="short">nᵒ</term>
-      <term name="collection-number" form="short">nᵒ</term>
+      <term name="issue" form="short">n{ᵒ}</term>
+      <term name="collection-number" form="short">n{ᵒ}</term>
       <term name="chapter-number" form="short">chap.</term>
       <term name="circa">vers</term>
       <term name="translator" form="short">trad.</term>
