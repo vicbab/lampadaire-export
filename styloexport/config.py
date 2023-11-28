@@ -53,6 +53,13 @@ SE_EDITIONS = {
         "name": "Lampadaire",
         "exports": {
             "all": {
+                "name": "all",
+                "formats": [
+                    "pdf",
+                    "html",
+                ],
+            },
+            "pdf": {
                 "name": "pdf",
                 "formats": [
                     "pdf",

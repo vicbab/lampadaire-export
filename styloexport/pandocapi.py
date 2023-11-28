@@ -55,10 +55,10 @@ class PandocAPI:
             "standalone": "false",
         }
         files = {
-            "markdown_file": ("input.md", "".encode()),
-            "bibtex_file": ("input.bib", bibliography_excerpt.encode()),
-            "yaml_file": ("input.yaml", "---\nnocite: '@*'\n---\n".encode()),
-            "csl_file": (f"{bibliography_style}.csl", csl_file_path.read_bytes()),
+            "markdown_file": ("input.md", ""),
+            "bibtex_file": ("input.bib", bibliography_excerpt.encode('utf-8')),
+            "yaml_file": ("input.yaml", "---\nnocite: '@*'\n---\n".encode('utf-8')),
+            "csl_file": (f"{bibliography_style}.csl", csl_file_path.read_bytes().decode('latin-1').encode('utf-8')),
         }
         return call_pandocapi("convert/html/", params=params, files=files)
 
@@ -78,11 +78,11 @@ class PandocAPI:
             "standalone": "false",
         }
         files = {
-            "markdown_file": ("input.md", md_content.encode()),
-            "bibtex_file": ("input.bib", bib_content.encode()),
-            "yaml_file": ("input.yaml", yaml_content.encode()),
-            "template_file": ("template.html", template_file_path.read_bytes()),
-            "csl_file": (f"{bibliography_style}.csl", csl_file_path.read_bytes()),
+            "markdown_file": ("input.md", md_content.decode('latin-1').encode('utf-8')),
+            "bibtex_file": ("input.bib", bib_content.decode('utf-8').encode('utf-8')),
+            "yaml_file": ("input.yaml", yaml_content.decode('latin-1').encode('utf-8')),
+            "template_file": ("template.html", template_file_path.read_bytes().decode('utf-8').encode('utf-8')),
+            "csl_file": (f"{bibliography_style}.csl", csl_file_path.read_bytes().decode('utf-8').encode('utf-8')),
         }
         return call_pandocapi("convert/html/", params=params, files=files)
 
@@ -102,10 +102,10 @@ class PandocAPI:
         }
         files = {
             "markdown_file": ("input.md", self.md_file_path.read_bytes()),
-            "bibtex_file": ("input.bib", self.bib_file_path.read_bytes()),
-            "yaml_file": ("input.yaml", self.yaml_file_path.read_bytes()),
-            "template_file": ("template.html", template_file_path.read_bytes()),
-            "csl_file": (f"{style_name}.csl", csl_file_path.read_bytes()),
+            "bibtex_file": ("input.bib", self.bib_file_path.read_bytes().decode('latin-1')),
+            "yaml_file": ("input.yaml", self.yaml_file_path.read_bytes().decode('latin-1')),
+            "template_file": ("template.html", template_file_path.read_bytes().decode('latin-1')),
+            "csl_file": (f"{style_name}.csl", csl_file_path.read_bytes().decode('latin-1')),
         }
         return call_pandocapi("convert/html/", params=params, files=files)
 

@@ -277,12 +277,12 @@ $endif$
 
 <!--indexations FOAF-->
 
-<div class="indexations-foaf">
+<div class="indexations-foaf" hidden>
 <!--indexation FOAF pour auteur de l'article-->
 $if(authors)$
 $for(authors)$
-  <div property="http://purl.org/dc/terms/creator">
-    <div vocab="http://xmlns.com/foaf/0.1/" typeof="Person" class="foaf-author">
+  <div property="http://purl.org/dc/terms/creator" hidden>
+    <div vocab="http://xmlns.com/foaf/0.1/" typeof="Person" class="foaf-author" hidden>
        <span property="familyName">$authors.surname$</span>
        <span property="firstName">$authors.forname$</span>
        <span property="openid">$authors.orcid$</span>
@@ -294,8 +294,8 @@ $endif$
 <!--indexation FOAF pour redacteur du dossier-->
 $if(issueDirectors)$
 $for(issueDirectors)$
-  <div property="http://purl.org/dc/terms/contributor.edt">
-    <div vocab="http://xmlns.com/foaf/0.1/" typeof="Person" class="foaf-redactor">
+  <div property="http://purl.org/dc/terms/contributor.edt" hidden>
+    <div vocab="http://xmlns.com/foaf/0.1/" typeof="Person" class="foaf-redactor" hidden>
       <span property="familyName">$issueDirectors.surname$</span>
       <span property="firstName">$issueDirectors.forname$</span>
       <span property="gender">$issueDirectors.gender$</span>
@@ -308,8 +308,8 @@ $endif$
 <!--indexation FOAF pour directeur de la revue-->
 $if(director)$
 $for(director)$
-  <div property="http://purl.org/dc/terms/contributor.drt">
-    <div vocab="http://xmlns.com/foaf/0.1/" typeof="Person" class="foaf-director">
+  <div property="http://purl.org/dc/terms/contributor.drt" hidden>
+    <div vocab="http://xmlns.com/foaf/0.1/" typeof="Person" class="foaf-director" hidden>
       <span property="familyName">$director.surname$</span>
       <span property="firstName">$director.forname$</span>
       <span property="gender">$director.gender$</span>
@@ -322,8 +322,8 @@ $endif$
 <!--indexation FOAF pour traducteur de l'article -->
 $if(translators)$
 $for(translators)$
-  <div property="http://purl.org/dc/terms/contributor.trl">
-    <div vocab="http://xmlns.com/foaf/0.1/" typeof="Person" class="foaf-translator">
+  <div property="http://purl.org/dc/terms/contributor.trl" hidden>
+    <div vocab="http://xmlns.com/foaf/0.1/" typeof="Person" class="foaf-translator" hidden>
       <span property="familyName">$translators.surname$</span>
       <span property="firstName">$translators.forname$</span>
     </div>
@@ -334,8 +334,8 @@ $endif$
 <!--indexation FOAF pour transcripteur des propos (entretiens, débats) -->
 $if(transcriber)$
 $for(transcriber)$
-  <div property="http://purl.org/dc/terms/contributor.trc">
-    <div vocab="http://xmlns.com/foaf/0.1/" typeof="Person" class="foaf-transcriber">
+  <div property="http://purl.org/dc/terms/contributor.trc" hidden>
+    <div vocab="http://xmlns.com/foaf/0.1/" typeof="Person" class="foaf-transcriber" hidden>
       <span property="familyName">$transcriber.surname$</span>
       <span property="firstName">$transcriber.forname$</span>
     </div>
@@ -345,7 +345,7 @@ $endif$
 </div> <!-- End indexation FOAF -->
 
 <!--Integration schema "ScholarlyArticle"-->
-<div vocab="http://schema.org/" typeof="ScholarlyArticle" resource="#article" id="schema-scholarly-article">
+<div vocab="http://schema.org/" typeof="ScholarlyArticle" resource="#article" id="schema-scholarly-article" hidden>
 
 <!--Indexation titre/soustitre de l'article-->
   <span property="name">$title_f$</span><br />
@@ -369,7 +369,7 @@ $endif$
   </span>
 
 <!--Indexation revue-->
-  <div property="isPartOf" typeof="PublicationIssue" resource="#issue">
+  <div property="isPartOf" typeof="PublicationIssue" resource="#issue" hidden>
     <span typeof="Periodical" resource="#periodical">
       <span property="name">$journal$</span>
     </span>
@@ -385,7 +385,7 @@ $endif$
 
 <!-- Indexation resumes -->
 $if(abstract)$
-  <div class="description">
+  <div class="description" hidden>
 $for(abstract)$
     <div property="description" class="resume" lang="$abstract.lang$">$abstract.text_f$</div>
 $endfor$
@@ -395,7 +395,7 @@ $endif$
 <!--Indexation traduction-->
 $if(translationOf)$
 $for(translationOf)$
-  <div class="translationof">
+  <div class="translationof" hidden>
     <span property="inLanguage" content="$translationOf.lang$">$translationOf.lang$</span>
     <span property="translationOfWork" typeof="ScholarlyArticle" resource="$translationOf.url$">$translationOf.title$</span>
   </div>
@@ -404,10 +404,10 @@ $endif$
 
 <!-- Indexation mots cles controles -->
 $if(controlledKeywords)$
-  <div class="keywords" vocab="http://purl.org/dc/terms/">
+  <div class="keywords" vocab="http://purl.org/dc/terms/" hidden>
 $for(controlledKeywords)$
 $if(controlledKeywords.label)$
-    <div class="$controlledKeywords.label$" lang="fr">
+    <div class="$controlledKeywords.label$" lang="fr" hidden>
       <span property="subject" class="label">$controlledKeywords.label$</span>
 $if(controlledKeywords.uriRameau)$
       <span property="subject" class="uriRameau">$controlledKeywords.uriRameau$</span>
@@ -429,7 +429,7 @@ $endif$
 <!--Indexation mots cles auteurs-->
 $if(keywords)$
 $for(keywords)$
-<div class="authorKeywords_$keywords.lang$" vocab="http://purl.org/dc/terms/" lang="$keywords.lang$">
+<div class="authorKeywords_$keywords.lang$" vocab="http://purl.org/dc/terms/" lang="$keywords.lang$" hidden>
   <span property="subject">$keywords.list_f$</span>
 </div>
 $endfor$

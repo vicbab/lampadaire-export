@@ -21,6 +21,7 @@
 \usepackage{textcomp}
 \usepackage{newunicodechar}
 
+
 % Define a new command for the unsupported character
 \newunicodechar{ᵒ}{\textsuperscript{o}}
 
@@ -28,18 +29,32 @@
 
 \usepackage[all]{nowidow}
 \lhead{}
-\chead{$title_f$}
+\chead{\small{Lampadaire - $title_f$}}
 \rhead{}
 \lfoot{}
-\cfoot{\thepage}
-\rfoot{}
+\cfoot{}
+\rfoot{\small{\thepage}}
+
+\makeatletter
+\renewcommand\footnotesize{%
+   \@setfontsize\footnotesize\@ixpt{11}%
+   \abovedisplayskip 8\p@ \@plus2\p@ \@minus4\p@
+   \abovedisplayshortskip \z@ \@plus\p@
+   \belowdisplayshortskip 4\p@ \@plus2\p@ \@minus2\p@
+   \def\@listi{\leftmargin\leftmargini
+               \topsep 4\p@ \@plus2\p@ \@minus2\p@
+               \parsep 2\p@ \@plus\p@ \@minus\p@
+               \itemsep \parsep}%
+   \belowdisplayskip \abovedisplayskip
+}
+\makeatother
 
 
 
 \newlength{\cslhangindent}
-\setlength{\cslhangindent}{1.5em}
+\setlength{\cslhangindent}{1.5em} % was 1.5em
 \newlength{\csllabelwidth}
-\setlength{\csllabelwidth}{1.5em}
+\setlength{\csllabelwidth}{1.5em} % was 1.5em
 \newlength{\cslentryspacingunit} % times entry-spacing
 \setlength{\cslentryspacingunit}{\parskip}
 \newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
@@ -69,9 +84,10 @@
 \newcommand{\arkwlang}{\selectlanguage{arabic}}
 
 
-\usepackage[sfdefault]{inter} %% Option 'sfdefault' only if 'inter' is to be
-% the base font of the document
-\usepackage[T1]{fontenc}
+
+\usepackage{fontspec}
+
+\setmainfont{Inter}
 
 
 
@@ -180,7 +196,7 @@ $else$
 \usepackage{parskip}
 }{% else
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\parskip}{0pt}
 }
 $endif$
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
@@ -221,6 +237,8 @@ $if(dir)$
 \fi
 $endif$
 
+\newenvironment{body}{\par\setlength{\parindent}{0pt}}{\par}
+
 % set default figure placement to htbp
 \makeatletter
 \def\fps@figure{htbp}
@@ -246,35 +264,34 @@ $if(institute)$
 $endif$
 \date{}
 
+
+\usepackage{parskip}
 \begin{document}
+
 \$lang$kwlang
 \pagecolor[HTML]{FFEDD2}  % Change 'cyan' to any color you like
 \afterpage{\nopagecolor}
 \thispagestyle{empty}
-\renewcommand{\familydefault}{\sfdefault}
-\begin{center}
 
-\vspace*{1cm}
+\begin{center}{\noindent}
+
+
 \Huge\textbf{$title_f$}\\
 \vspace*{0.5cm}
 $if(subtitle_f)$
 \LARGE $subtitle_f$\\
 $endif$
-\vspace*{1cm}
+\vspace*{\fill}
 \includegraphics[width=100mm]{media/logo.png}\\
-\vspace*{1cm} \LARGE $if(authors)$
+\vspace*{\fill} \Large $if(authors)$
 $for(authors)$$authors.forname$ $authors.surname$$sep$,  $endfor$
 $endif$\\
-\normalsize\vspace*{1cm}Publié le $day$-$month$-$year$\\
-\vspace*{3cm}
-\href{https://lampadaire.org/$url_article$}{lampadaire.org/$url_article$}
-\end{center}
+\normalsize\vspace*{0.5cm}Publié le $day$-$month$-$year$\\
+\vspace*{0.5cm}
+\href{https://lampadaire.ca/$url_article$}{lampadaire.ca/$url_article$}
 
 \vspace*{\fill}
-\begin{flushright}
-\end{flushright}
 
-\begin{center}
 $rights$
 \end{center}
 
@@ -298,6 +315,7 @@ $for(authors)$
 $endfor$
 $endif$\\
 
+
 \justifying
 
 \vspace{1cm}
@@ -306,7 +324,7 @@ $for(abstract)$
 \$abstract.lang$kwlang
 
 \begin{abstract}
-
+\noindent
 $abstract.text_f$
 \end{abstract}
 
@@ -330,7 +348,10 @@ $endif$
 
 \$lang$kwlang
 
+
+\begin{body}
 $body$
+\end{body}
 
 $if(natbib)$
 $if(bibliography)$

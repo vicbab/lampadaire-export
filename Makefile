@@ -49,7 +49,7 @@ release: ## Create a new Docker image and publish it
 
 .PHONY: run
 run: ## Run the development server
-	FLASK_APP=styloexport FLASK_DEBUG=1 flask run --exclude-patterns *0.zip:*1.zip:images.zip
+	FLASK_APP=styloexport FLASK_DEBUG=0 flask run --exclude-patterns *0.zip:*1.zip:images.zip
 
 .PHONY: styles
 styles: ## Download and prepare bibliographic styles
