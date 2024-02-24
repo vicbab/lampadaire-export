@@ -23,7 +23,7 @@ def call_pandocapi(url: str, params: dict, files: dict) -> httpx.Response:
             try:
                 json_response: dict = exc.response.json()
                 exc.detail = json_response.get("detail")  # type: ignore[attr-defined]
-                print(exc.detail)
+                # print(exc.detail)
             except json.decoder.JSONDecodeError:
                 pass
             exc.url = url  # type: ignore[attr-defined]
@@ -58,7 +58,7 @@ class PandocAPI:
             "markdown_file": ("input.md", ""),
             "bibtex_file": ("input.bib", bibliography_excerpt.encode('utf-8')),
             "yaml_file": ("input.yaml", "---\nnocite: '@*'\n---\n".encode('utf-8')),
-            "csl_file": (f"{bibliography_style}.csl", csl_file_path.read_bytes().decode('latin-1').encode('utf-8')),
+            "csl_file": (f"{bibliography_style}.csl", csl_file_path.read_bytes().encode('utf-8')),
         }
         return call_pandocapi("convert/html/", params=params, files=files)
 
@@ -78,7 +78,7 @@ class PandocAPI:
             "standalone": "false",
         }
         files = {
-            "markdown_file": ("input.md", md_content.decode('latin-1').encode('utf-8')),
+            "markdown_file": ("input.md", md_content.decode('latin-1').encode('latin-1')),
             "bibtex_file": ("input.bib", bib_content.decode('utf-8').encode('utf-8')),
             "yaml_file": ("input.yaml", yaml_content.decode('latin-1').encode('utf-8')),
             "template_file": ("template.html", template_file_path.read_bytes().decode('utf-8').encode('utf-8')),
@@ -102,10 +102,10 @@ class PandocAPI:
         }
         files = {
             "markdown_file": ("input.md", self.md_file_path.read_bytes()),
-            "bibtex_file": ("input.bib", self.bib_file_path.read_bytes().decode('latin-1')),
-            "yaml_file": ("input.yaml", self.yaml_file_path.read_bytes().decode('latin-1')),
-            "template_file": ("template.html", template_file_path.read_bytes().decode('latin-1')),
-            "csl_file": (f"{style_name}.csl", csl_file_path.read_bytes().decode('latin-1')),
+            "bibtex_file": ("input.bib", self.bib_file_path.read_bytes()),
+            "yaml_file": ("input.yaml", self.yaml_file_path.read_bytes()),
+            "template_file": ("template.html", template_file_path.read_bytes()),
+            "csl_file": (f"{style_name}.csl", csl_file_path.read_bytes()),
         }
         return call_pandocapi("convert/html/", params=params, files=files)
 
@@ -210,10 +210,18 @@ class PandocAPI:
             "markdown_file": ("input.md", self.md_file_path.read_bytes().decode('latin-1').encode('utf-8')),
             "bibtex_file": ("input.bib", self.bib_file_path.read_bytes().decode('latin-1').encode('utf-8')),
             "yaml_file": ("input.yaml", self.yaml_file_path.read_bytes().decode('latin-1').encode('utf-8')),
-            "images_file": ("images.zip", images_file_path.read_bytes().decode('latin-1').encode('utf-8')),
+            "images_file": ("images.zip", images_file_path.read_bytes()),
             "template_file": ("templateLaTeX.latex", template_file_path.read_bytes().decode('utf-8').encode('utf-8')),
-            "csl_file": (f"{style_name}.csl", csl_file_path.read_bytes().decode('latin-1').encode('utf-8')),
+            "csl_file": (f"{style_name}.csl", csl_file_path.read_bytes().decode('utf-8').encode('utf-8')),
         }
+        # files = {
+        #     "markdown_file": ("input.md", self.md_file_path.read_bytes().decode('latin-1').encode('utf-8')),
+        #     "bibtex_file": ("input.bib", self.bib_file_path.read_bytes().decode('latin-1').encode('utf-8')),
+        #     "yaml_file": ("input.yaml", self.yaml_file_path.read_bytes().decode('latin-1').encode('utf-8')),
+        #     "images_file": ("images.zip", images_file_path.read_bytes().decode('latin-1').encode('utf-8')),
+        #     "template_file": ("templateLaTeX.latex", template_file_path.read_bytes().decode('latin-1').encode('utf-8')),
+        #     "csl_file": (f"{style_name}.csl", csl_file_path.read_bytes()),
+        # }
         return call_pandocapi("convert/pdf/", params=params, files=files)
 
     def odt(

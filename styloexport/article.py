@@ -171,7 +171,7 @@ class Article:
         # In case of Sens-Public for instance, we want to add
         # media referenced in the template with article's images.
         media_folder = templates_folder / images_config_path
-
+        # print(str(images_config_path))
         if not self.images and not media_folder.exists():
             # We still want an empty archive to upload to the server.
             with ZipFile(zip_file_path, mode="w") as archive:
@@ -190,7 +190,10 @@ class Article:
         with ZipFile(zip_file_path, mode="a") as archive:
             for image_path in image_paths:
                 arcname = image_path.relative_to(self.download_dir)
+                arcname = str(arcname).replace('\\', '/')  # replace backslashes with forward slashes
                 if str(arcname) not in archive.namelist():
+                    #print("image not in archive " + str(arcname))
+                    #print(archive.namelist())
                     archive.write(image_path, arcname=arcname)
 
             if media_folder.exists():
@@ -199,6 +202,8 @@ class Article:
                     media_file_path_copy = images_path / filename
                     shutil.copyfile(media_file_path, media_file_path_copy)
                     arcname = media_file_path_copy.relative_to(self.download_dir)
+                    arcname = str(arcname).replace('\\', '/')  # replace backslashes with forward slashes
+                    print("if" + str(arcname) + " " + str(archive.namelist()))
                     if str(arcname) not in archive.namelist():
                         archive.write(media_file_path_copy, arcname=arcname)
 
@@ -333,6 +338,7 @@ class Article:
     def _write_to_archive(self, archive: ZipFile, file_name: Path) -> None:
         """A wrapper to generate correct relative paths within the archive."""
         arcname = file_name.relative_to(self.download_dir.parent)
+        arcname = str(arcname).replace('\\', '/')  # replace backslashes with forward slashes
         if str(arcname) not in archive.namelist():
             archive.write(file_name, arcname=arcname)
 
@@ -382,19 +388,29 @@ class Article:
 
         md_original_file_name = self.download_dir / "originals" / self.filenames["md"]
         md_file_path = self.download_dir / self.filenames["md"]
+
         md_content = md_original_file_name.read_text()
-        for image in self.images:
-            md_content = md_content.replace(
-                # Useful in case of image URL redirection.
-                image.get("original_url", image["url"]),
-                f"{images_config_path}/{image['name']}",
-            )
+        
+        # TODO: Fix this
+        # IL FAUT DÉCOMMENTER ÇA POUR QUE LES IMAGES SOIENT PRISES LOCALEMENT (ça ne fonctionne pas pour l'instant, je ne sais pas pourquoi)
+        # for image in self.images:
+        #     md_content = md_content.replace(
+        #         # Useful in case of image URL redirection.
+        #         image.get("original_url", image["url"]),
+        #         f"{images_config_path}/{image['name']}",
+        #     )
+
         # It happens with iframes from Youtube but the XML parser hates
         # these lazy HTML attributes.
         md_content = md_content.replace(
             "allowfullscreen>", 'allowfullscreen="allowfullscreen">'
         )
+        md_content = md_content.replace(
+            "œ", 'oe'
+        )
         md_file_path.write_text(md_content)
+
+
 
         pandocapi = PandocAPI(md_file_path, yaml_file_path, bib_file_path)
 
@@ -501,8 +517,8 @@ class Article:
                     with_toc,
                     style_name,
                 )
-                print(archive)
-                print(response)
+                # print(archive)
+                # print(response)
                 export_file_path.write_bytes(response.content)
                 self._write_to_archive(archive, export_file_path)
             if "odt" in formats:

@@ -1,0 +1,21 @@
+\documentclass[landscape]{article}
+\usepackage{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+\setmainfont{Inter}
+\usepackage{multicol}
+\setlength{\columnseprule}{0.4pt}
+\usepackage{multido}
+\setlength{\parindent}{0pt}
+\begin{document}
+
+\begin{multicols}{10}
+\multido{\i=0+1}{"10000}{% from U+0000 to U+FFFF
+  \iffontchar\font\i
+    \makebox[3em][l]{\i}%
+    \symbol{\i}\endgraf
+  \fi
+}
+\end{multicols}
+
+\end{document}

@@ -11,7 +11,7 @@ SE_ALLOWED_INSTANCE_BASE_URLS = (
 )
 SE_DOWNLOAD_DIR = (Path() / "downloads").resolve()
 SE_STYLES_DIR = (Path() / "styles").resolve()
-SE_STYLES_FIELDS = "humanities"
+SE_STYLES_FIELDS = "generic-base"
 SE_SUPPORTED_IMAGES_EXTENSIONS = [".png", ".jpg", ".jpeg", ".gif"]
 SE_GRAPHQL_TOKEN = ""
 
@@ -57,12 +57,19 @@ SE_EDITIONS = {
                 "formats": [
                     "pdf",
                     "html",
+                    "tex",
                 ],
             },
             "pdf": {
                 "name": "pdf",
                 "formats": [
                     "pdf",
+                ],
+            },
+            "tex": {
+                "name": "tex",
+                "formats": [
+                    "tex",
                 ],
             }
         },

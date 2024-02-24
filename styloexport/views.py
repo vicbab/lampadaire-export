@@ -284,7 +284,7 @@ def downloads(
     download_file_path = (
         download_dir / edition / domain / f"{article_slug}-{article_id}" / filename
     )
-    print(download_file_path)
+    # print(download_file_path)
     if not download_file_path.exists():
         return abort(404)
 

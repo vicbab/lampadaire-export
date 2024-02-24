@@ -5,6 +5,9 @@
         },
         {
             "path": "../../pandoc-api/pandoc-api"
+        },
+        {
+            "path": "../../siterevuestylo"
         }
     ]
 }

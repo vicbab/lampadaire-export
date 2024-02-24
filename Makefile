@@ -68,6 +68,10 @@ production: ## Run the production server
 		--timeout 300 \
 		--log-level debug
 
+.PHONY: debug
+debug: ## Run the development server
+	FLASK_APP=styloexport FLASK_DEBUG=1 flask run --exclude-patterns *0.zip:*1.zip:images.zip
+
 .PHONY: test
 test: ## Run the test suite
 	@echo "${GREEN}🤖 Testing code${NC}"

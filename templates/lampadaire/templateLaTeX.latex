@@ -1,5 +1,5 @@
 \documentclass[12pt,$if(lang)$$babel-lang$$endif$,letterpaper]{article}
-  \usepackage[utf8x]{inputenc}
+  \usepackage[utf8]{inputenc}
 \usepackage[spanish,portuguese,german,ukrainian,english,french,italian,$if(lang)$main=$babel-lang$$endif$]{babel}
 
 \usepackage{grffile}
@@ -21,9 +21,14 @@
 \usepackage{textcomp}
 \usepackage{newunicodechar}
 
+\usepackage{multicol}
+\setlength{\columnseprule}{0.4pt}
+\usepackage{multido}
+\setlength{\parindent}{0pt}
 
 % Define a new command for the unsupported character
-\newunicodechar{ᵒ}{\textsuperscript{o}}
+% \newunicodechar{ᵒ}{\textsuperscript{o}}
+% \newunicodechar{œ}{\oe}
 
 \pagestyle{fancy}
 
@@ -89,12 +94,7 @@
 
 \setmainfont{Inter}
 
-
-
-
-\newcommand{\titlekwfr}{
-\textbf{Mot-clés}~:
-}
+\newcommand{\titlekwfr}{\noindent\textbf{Mot-clés~:~}}
 \newcommand{\titlekwpt}{
 \textbf{Palavras-chave}:
 }
@@ -115,7 +115,7 @@
 }
 
 
-\newenvironment{keyword}{\noindent}{\\}
+\newenvironment{keyword}{\noindent\setlength{\parindent}{0pt}}{\\}
 
 
 \usepackage[unicode=true]{hyperref}
@@ -263,7 +263,8 @@ $if(institute)$
 \institute{$for(institute)$$institute$$sep$ \and $endfor$}
 $endif$
 \date{}
-
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty}
 
 \usepackage{parskip}
 \begin{document}
@@ -311,35 +312,29 @@ $endfor$
 
 $if(authors)$
 $for(authors)$
-\normalsize $authors.forname$ $authors.surname$ ($authors.affiliations$)$sep$,
+\normalsize $authors.forname$ $authors.surname$$if(authors.affiliations)$ ($authors.affiliations$)$endif$$sep$,
 $endfor$
 $endif$\\
 
 
 \justifying
-
 \vspace{1cm}
+
 $if(abstract)$
 $for(abstract)$
 \$abstract.lang$kwlang
-
 \begin{abstract}
 \noindent
 $abstract.text_f$
 \end{abstract}
-
 $endfor$
 $endif$
 
-
 $if(keywords)$
-\thispagestyle{empty}
 $for(keywords)$
 \$keywords.lang$kwlang
-\begin{keyword}
 \titlekw$keywords.lang$
-$keywords.list_f$
-\end{keyword}
+$keywords.list_f$\\
 $endfor$
 $endif$
 
