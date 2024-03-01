@@ -408,6 +408,14 @@ class Article:
         md_content = md_content.replace(
             "œ", 'oe'
         )
+        # We want to make sure there are non-breaking spaces before and after guillemets.
+        md_content = md_content.replace(
+            "« ", '«&nbsp;'
+        )
+        md_content = md_content.replace(
+            " »", '&nbsp;»'
+        )
+
         md_file_path.write_text(md_content)
 
 
