@@ -207,12 +207,12 @@ class PandocAPI:
             "fail-if-warnings": "false",
         }
         files = {
-            "markdown_file": ("input.md", self.md_file_path.read_bytes().decode('latin-1').encode('utf-8')),
-            "bibtex_file": ("input.bib", self.bib_file_path.read_bytes().decode('latin-1').encode('utf-8')),
-            "yaml_file": ("input.yaml", self.yaml_file_path.read_bytes().decode('latin-1').encode('utf-8')),
+            "markdown_file": ("input.md", self.md_file_path.read_bytes()),
+            "bibtex_file": ("input.bib", self.bib_file_path.read_bytes()),
+            "yaml_file": ("input.yaml", self.yaml_file_path.read_bytes()),
             "images_file": ("images.zip", images_file_path.read_bytes()),
-            "template_file": ("templateLaTeX.latex", template_file_path.read_bytes().decode('utf-8').encode('utf-8')),
-            "csl_file": (f"{style_name}.csl", csl_file_path.read_bytes().decode('utf-8').encode('utf-8')),
+            "template_file": ("templateLaTeX.latex", template_file_path.read_bytes()),
+            "csl_file": (f"{style_name}.csl", csl_file_path.read_bytes()),
         }
         # files = {
         #     "markdown_file": ("input.md", self.md_file_path.read_bytes().decode('latin-1').encode('utf-8')),

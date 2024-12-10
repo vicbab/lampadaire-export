@@ -418,8 +418,6 @@ class Article:
 
         md_file_path.write_text(md_content)
 
-
-
         pandocapi = PandocAPI(md_file_path, yaml_file_path, bib_file_path)
 
         with ZipFile(zip_file_path, mode="a") as archive:
